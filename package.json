@@ -1,0 +1,29 @@
+{
+  "name": "muxi_site_homepage",
+  "version": "1.0.0",
+  "description": "muxi homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muxi-Studio/muxi_site_homepage.git"
+  },
+  "author": "Muxi FE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muxi-Studio/muxi_site_homepage/issues"
+  },
+  "homepage": "https://github.com/Muxi-Studio/muxi_site_homepage#readme",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.0"
+  }
+}

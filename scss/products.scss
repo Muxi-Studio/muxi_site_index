@@ -1,0 +1,29 @@
+@import "base.scss";
+.products-wrap{
+	width: 100%;
+	height: 60%;
+	background-color: gray;
+}
+.products-content{
+	width: 80%;
+	height: 100%;
+	background-color: black;
+	margin:0 auto;
+	font-size: 0;
+}
+.products-content-left{
+	display: inline-block;
+	width: 50%;
+	color:white;
+	background-color: gray;
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.products-content-right{
+	vertical-align: middle;
+	display:inline-block;
+	width: 50%;
+	height: 100%;
+	background-color: green;
+}

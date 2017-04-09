@@ -1,0 +1,21 @@
+{
+	"routes": [
+		{
+			"name": "home",
+			"endpoint": "/",
+			"template": "products",
+			"async": false
+		},
+		{
+			"name": "second",
+			"endpoint": "/group",
+			"template": "group",
+			"async": false
+		}
+	],
+	"data":{
+		"home":{
+			"title": "hello"
+		}
+	}
+}
