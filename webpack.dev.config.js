@@ -20,6 +20,9 @@ module.exports = {
       {
         test: /\.html$/,
         loader: "html-loader"
+      }, {
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            loader: 'url-loader?limit=20&name=images/[hash:8].[name].[ext]'
       }]
   },
   resolve: {
