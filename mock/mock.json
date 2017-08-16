@@ -1,21 +1,58 @@
 {
-	"routes": [
-		{
-			"name": "home",
-			"endpoint": "/",
-			"template": "products",
-			"async": false
-		},
-		{
-			"name": "second",
-			"endpoint": "/group",
-			"template": "group",
-			"async": false
-		}
-	],
-	"data":{
-		"home":{
-			"title": "hello"
-		}
-	}
+  "routes": [
+    {
+      "name" : "home",
+      "endpoint": "/",
+      "template": "home",
+      "async": false
+    },
+    {
+      "name": "second",
+      "endpoint": "/second",
+      "template": "second",
+      "async": false
+    },
+    {
+      "name": "deleteNews",
+      "endpoint": "/api/v1.0/news/",
+      "method": "delete",
+      "async": true
+    }
+  ],
+  "data":{
+    "news":{
+        "tableData": [{
+          "state":1,
+            "title": "HAHA",
+            "author": "AMANDA",
+            "description":"lajgle",
+            "id":"012345",
+            "tags": ["标签一","标签二","标签三","标签四","标签五","标签六"]
+          },{
+            "state":0,
+            "title": "HAHA",
+            "author": "AMANDA",
+            "description":"lajgle",
+            "id":"012345",
+            "tags": ["标签一","标签二","标签三","标签四","标签五","标签六"]
+          },{
+            "state":1,
+            "title": "HAHA",
+            "author": "AMANDA",
+            "description":"lajgle",
+            "id":"012345",
+            "tags": ["标签一","标签二","标签三","标签四","标签五","标签六"]
+          },{
+            "state":0,
+            "title": "HAHA",
+            "author": "AMANDA",
+            "description":"lajgle",
+            "id":"012345",
+            "tags": ["标签一","标签二","标签三","标签四","标签五","标签六"]
+          }]
+        },
+    "api.courses":{
+      "title": "second"
+    }
+  }
 }
