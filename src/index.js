@@ -1,22 +1,16 @@
 import { h, render, Component } from 'preact';
-import './styles/main.scss'
+import './styles/base.scss'
+import Header from './components/header/header.js'
+import Banner from './components/banner/banner.js'
 /** @jsx h */
 
 
-class App extends Component {
-	state = {
-		text: 'hello!'
-	
-};
-	
-	render({}, { text }) {
+class App extends Component {	
+	render() {
 		return (
 			<app>
-				<header>
-					<h1>
-						{ text } Preact Home Page
-					</h1>
-				</header>
+				<Header />
+				<Banner />
 			</app>
 		);
 	}

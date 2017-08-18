@@ -1,29 +1,21 @@
 {
-  "name": "react-kit",
-  "version": "1.0.1",
-  "description": "",
-  "main": "webpack.config.dev.js",
+  "name": "muxi_site_index",
+  "version": "1.0.0",
+  "description": "muxi site",
+  "main": "ninja.conf.js",
   "scripts": {
-    "start": "node server.js",
-    "lint": "eslint src",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js && rimraf dist"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stephenLYao/react-kit.git"
+    "url": "git+https://github.com/Muxi-Studio/muxi_site_index.git"
   },
-  "keywords": [
-    "react",
-    "webpack",
-    "babel"
-  ],
-  "author": "stephenliu",
+  "author": "MFE",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stephenLYao/react-kit/issues"
+    "url": "https://github.com/Muxi-Studio/muxi_site_index/issues"
   },
-  "homepage": "https://github.com/stephenLYao/react-kit#readme",
-  "devDependencies": {},
+  "homepage": "https://github.com/Muxi-Studio/muxi_site_index#readme",
   "dependencies": {
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",

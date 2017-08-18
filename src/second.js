@@ -1,25 +1,30 @@
 import { h, render, Component } from 'preact';
-/** @jsx h */
 
+class Clock extends Component {
+    constructor() {
+        super();
+        // 设置初始的时间
+        this.state.time = Date.now();
+    }
 
-class App extends Component {
-	state = {
-		text: 'hello'
-	
-	};
-	
-	render({}, { text }) {
-		return (
-			<app>
-				<header>
-					<h1>
-						Preact Second Page
-					</h1>
-				</header>
-			</app>
-		);
-	}
+    componentDidMount() {
+        // 每秒都更新一下时间
+        this.timer = setInterval(() => {
+            this.setState({ time: Date.now() });
+        }, 1000);
+    }
+
+    componentWillUnmount() {
+        // 当不再渲染，停止计时器
+        clearInterval(this.timer);
+    }
+
+    render(props, state) {
+        let time = new Date(state.time).toLocaleTimeString();
+        return <span>{ time }</span>;
+    }
 }
 
-render(<App />, document.body);
+// 将一个时钟对象渲染在 < body > 标签:
+render(<Clock />, document.body);
 

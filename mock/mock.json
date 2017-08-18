@@ -5,14 +5,32 @@
       "endpoint": "/",
       "template": "home",
       "async": false
-    },
-    {
+    },{
+      "name" : "home",
+      "endpoint": "/intro",
+      "template": "home",
+      "async": false
+    },{
+      "name" : "home",
+      "endpoint": "/product",
+      "template": "home",
+      "async": false
+    },{
+      "name" : "home",
+      "endpoint": "/member",
+      "template": "home",
+      "async": false
+    },{
+      "name" : "home",
+      "endpoint": "/join",
+      "template": "home",
+      "async": false
+    },{
       "name": "second",
       "endpoint": "/second",
       "template": "second",
       "async": false
-    },
-    {
+    },{
       "name": "deleteNews",
       "endpoint": "/api/v1.0/news/",
       "method": "delete",
