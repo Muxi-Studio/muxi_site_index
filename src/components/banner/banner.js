@@ -1,27 +1,51 @@
 import { h, render, Component } from 'preact';
+import PreactCSSTransitionGroup from 'preact-css-transition-group'
+import BannerItem from './banner-item.js'
 import style from './banner.scss'
 /** @jsx h */
 
 export default class Banner extends Component {	
-	render() {
+	constructor() {
+    	super();
+    	this.renderPage = this.renderPage.bind(this);
+    	// this.state = { currentPage: 1};
+  	}
+	state = {
+		currentPage:1,
+		items: ['hello', 'world', 'click', 'me']
+	};
+	
+	handleAdd = () => {
+		let item = prompt('Enter some text'),
+			items = this.state.items.concat(item);
+		this.setState({ items });
+	};
+	
+	handleRemove = (i) => {
+		let items = this.state.items.slice();
+		items.splice(i, 1);
+		this.setState({ items });
+	};
+	renderPage = () =>{
+		return (<BannerItem test={this.state.currentPage}/>);
+	};
+	render({ }, { items }) {
 		return (
-			<div class="products-wrap">
-				<div class="products-intro" id="products-intro">
-					<div class="products-content products-on">
-						<div class="products-left">
-							<div class="products-left-content">
-								<h1>华师匣子</h1>
-								<div class="products-des">
-					                <span class="products-des-txt">ios应用</span>
-				                </div>
-								<div>华师学子专属利器，具有查看课表、查询成绩等功能，轻松扫除在校疑难症</div>
-								<button class="products-btn">下载地址</button>
-							</div>
-						</div>
-						<div class="products-right"></div>
-					</div>
-				</div>
-			</div>
+			this.renderPage()			
+			// <BannerItem />
+			// <div>
+			// 	<button onClick={this.handleAdd}>Add Item</button>
+			// 	<PreactCSSTransitionGroup
+			// 			transitionName="example"
+			// 			transitionEnterTimeout={500}
+			// 			transitionLeaveTimeout={300}>
+			// 		{ items.map( (item, i) => (
+			// 			<div key={item} onClick={()=>this.handleRemove(i)}>
+			// 				{item}
+			// 			</div>
+			// 		)) }
+			// 	</PreactCSSTransitionGroup>
+			// </div>
 		);
 	}
 }
