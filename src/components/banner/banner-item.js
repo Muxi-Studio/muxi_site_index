@@ -5,11 +5,12 @@ import config from './const.js'
 export default class BannerItem extends Component{
 	constructor(props) {
 	    super();
-	    this.state = config[props.key-1]
+	    this.state = config[props.key]
 	}
 	render(props,{}) {
+		let width = 100 / props.count + '%';
 		return (
-				<div class="products-intro" id="products-intro">
+				<div class="products-intro" style={{width: width}}>
 					<div class="products-content products-on">
 						<div class="products-left">
 							<div class="products-left-content">

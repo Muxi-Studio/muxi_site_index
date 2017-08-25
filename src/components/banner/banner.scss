@@ -4,11 +4,16 @@ $btn-width:100px;
 $btn-height:40px;
 $linear-border-width:4px;
 .products-wrap{
-	width: 100%;
+  width: 100%;
 	height: 64%;
+  overflow: hidden;
+}
+.products-banner{
+  height: 100%;
+  position: relative;
 }
 .products-intro{
-	width: 100%;
+  display:inline-block;
 	height: 100%;
 	position: relative;
 }
@@ -83,19 +88,20 @@ $linear-border-width:4px;
 	display:inline-block;
 	width: 30%;
 	height: 100%;
-	// background-image: url('../../../static/img/ccnubox.png');
+	background-image: url('../../../static/image/ccnubox.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 90%;
 }
 
 .products-bottom{
-	margin-top: 50px;
+  position: absolute;
+	bottom: 80px;
 	width: 100%;
 	height: 70px;
 	background-color: $banner-controller;
 	.products-controller{
-		width: 768px;
+		width: 980px;
 		margin:0 auto;
 		font-size: 0;
 		display: flex;
@@ -117,21 +123,19 @@ $linear-border-width:4px;
 			flex:1;
 			height: 70px;
 			display: flex;
+      overflow: hidden;
 			text-align: center;
 			position: relative;
 			.text{
-				width: calc(50% + 110px);
-				position: absolute;
-				right: 0;
 				font-size: 0;
+        position: absolute;
+        left: 368px;
+        height: 100%;
 				.products-item{
 					display: inline-block;
-					width: 120px;
+					width: 184px;
 					line-height: 70px;
 					font-size: 16px;
-				}
-				.products-item-center{
-					padding: 0 51px;
 				}
 			}
 		}
@@ -201,92 +205,4 @@ $linear-border-width:4px;
     {
       from{padding:0px;}
       to{padding:0px 51px;}
-    }
-
-.left-in{  
-	visibility: visible;
-    animation: left-in 1s ease-in-out;
-    animation-fill-mode: forwards;
-      }
-   @keyframes left-in
-    {
-    	from{transform:translate(-100%,0);}
-    	to{transform:translate(0,0)}
-      // from{left:-100%;}
-      // to{left:0;}
-    }
-    @-webkit-keyframes left-in /* Safari and Chrome */
-    {
-    	from{transform:translate(-100%,0);}
-    	to{transform:translate(0,0)}
-    }
-
-.left-out{  
-	visibility: visible;
-    animation: left-out 1s ease-in-out;
-    animation-fill-mode: forwards;
-      }
-   @keyframes left-out
-    {
-    	from{transform:translate(0,0);}
-    	to{transform:translate(100%,0)}
-    }
-    @-webkit-keyframes left-out /* Safari and Chrome */
-    {
-    	from{transform:translate(0,0);}
-    	to{transform:translate(100%,0)}
-    }
-
-.right-in{  
-	visibility: visible;
-    animation: right-in 1s ease-in-out;
-    animation-fill-mode: forwards;
-      }
-   @keyframes right-in
-    {
-    	from{transform:translate(100%,0);}
-    	to{transform:translate(0,0)}
-    }
-    @-webkit-keyframes right-in /* Safari and Chrome */
-    {
-    	from{transform:translate(100%,0);}
-    	to{transform:translate(0,0)}
-    }
-
-.right-out{  
-	visibility: visible;
-    animation: right-out 1s ease-in-out;
-    animation-fill-mode: forwards;
-      }
-   @keyframes right-out
-    {
-    	from{transform:translate(0,0);}
-    	to{transform:translate(-100%,0)}
-    }
-    @-webkit-keyframes right-out /* Safari and Chrome */
-    {
-    	from{transform:translate(0,0);}
-    	to{transform:translate(-100%,0)}
-    }
-
-.example{
-  color:red;
-}
-
-.example-enter {
-  opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-
-.example-leave {
-  opacity: 1;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 300ms ease-in;
-}   
+    }  

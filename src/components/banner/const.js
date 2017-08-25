@@ -13,6 +13,12 @@ var conf = [{
 	type:"ios应用",
 	intro:"华师学子专属利器，具有查看课表",
 	href:"www.baidu.com"
+},
+{
+	product:"木小犀",
+	type:"ios应用",
+	intro:"华师学子专属利器，具有查看课表",
+	href:"www.baidu.com"
 }]
 
 export default conf

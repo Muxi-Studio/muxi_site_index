@@ -8,43 +8,31 @@ import config from './const.js'
 
 export default class Banner extends Component {	
 	state = {
-		currentPage:1,
-		items: ['hello', 'world', 'click', 'me']
+		currentPage:0,
 	};
 	componentWillMount(){
 		var countPage = config.length
-		this.setState({ countPage })		
+		this.setState({ countPage })
 	}
-	handleAdd = () => {
-		let item = prompt('Enter some text'),
-			items = this.state.items.concat(item);
-		this.setState({ items });
-	};
-	
-	handleRemove = (i) => {
-		let items = this.state.items.slice();
-		items.splice(i, 1);
-		this.setState({ items });
-	};
 	updateItem = (e) =>{
-		if(!(this.state.currentPage<=1&&e==-1 || this.state.currentPage >= this.state.countPage && e==1)){
+		if(!(this.state.currentPage<=0&&e==-1 || this.state.currentPage >= this.state.countPage -1 && e==1)){
 			this.setState({currentPage: this.state.currentPage + e})
 		}
 	};
-	renderPage = () =>{
-		return (<BannerItem key={this.state.currentPage}/>);
-	};
 	render({ }, { }) {
+		let width = this.state.countPage * 100 + '%'
+		var indexArray = Array.from(new Array(this.state.countPage),(val,index)=>index)	
 		return (
 			<div class="products-wrap">
-				<div>{this.state.currentPage}</div>
-				<PreactCSSTransitionGroup
-					transitionName="example"
-					transitionEnterTimeout={500}
-					transitionLeaveTimeout={300}>
-					{this.renderPage()}
-				</PreactCSSTransitionGroup>
-				<BannerController update={this.updateItem}/>
+				<div class="products-banner" style={{
+					width: width,
+					transitionDuration: '.8s',
+					left: -100 * this.state.currentPage + "%"}}>
+				{ indexArray.map( (item, i) => (
+						<BannerItem key={item} count={this.state.countPage}/>
+					)) }
+				</div>
+				<BannerController update={this.updateItem} current = {this.state.currentPage} count ={this.state.countPage}/>
 			</div>
 		);
 	}
