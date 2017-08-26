@@ -7,13 +7,13 @@ import config from './const.js'
 /** @jsx h */
 
 export default class Banner extends Component {	
+	constructor(props) {
+	    super();
+	    this.state.countPage = config.length
+	}
 	state = {
 		currentPage:0,
 	};
-	componentWillMount(){
-		var countPage = config.length
-		this.setState({ countPage })
-	}
 	updateItem = (e) =>{
 		if(!(this.state.currentPage<=0&&e==-1 || this.state.currentPage >= this.state.countPage -1 && e==1)){
 			this.setState({currentPage: this.state.currentPage + e})

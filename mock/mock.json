@@ -13,7 +13,7 @@
     },{
       "name" : "home",
       "endpoint": "/product",
-      "template": "home",
+      "template": "second",
       "async": false
     },{
       "name" : "home",

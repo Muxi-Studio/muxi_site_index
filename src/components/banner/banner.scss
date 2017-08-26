@@ -5,7 +5,7 @@ $btn-height:40px;
 $linear-border-width:4px;
 .products-wrap{
   width: 100%;
-	height: 64%;
+  height: 64%;
   overflow: hidden;
 }
 .products-banner{
@@ -13,7 +13,7 @@ $linear-border-width:4px;
   position: relative;
 }
 .products-intro{
-  display:inline-block;
+  	display:inline-block;
 	height: 100%;
 	position: relative;
 }
@@ -24,7 +24,6 @@ $linear-border-width:4px;
 	font-size: 0;
 	position:absolute;
 	top: 0px;
-	visibility: hidden;
 }
 .products-left{
 	display: inline-block;
@@ -105,46 +104,45 @@ $linear-border-width:4px;
 		margin:0 auto;
 		font-size: 0;
 		display: flex;
-    align-items: center;
+    	align-items: center;
 		.controller-btn{
-      width: 0;
-      height: 0;
-      border: solid;
-      border-width: 10px 15px;
-      border-color: transparent;
+			width: 0;
+			height: 0;
+			border: solid;
+			border-width: 10px 15px;
+			border-color: transparent;
 		}
-    .btn-left{
-      border-right-color: #e1ddd6;
-    }
-    .btn-right{
-      border-left-color: #e1ddd6;
-    }
+	    .btn-left{
+	      border-right-color: #e1ddd6;
+	    }
+	    .btn-right{
+	      border-left-color: #e1ddd6;
+	    }
 		.products-cnt-text{
 			flex:1;
 			height: 70px;
 			display: flex;
-      overflow: hidden;
+	  		overflow: hidden;
 			text-align: center;
 			position: relative;
 			.text{
 				font-size: 0;
-        position: absolute;
-        left: 368px;
-        height: 100%;
+		        position: absolute;
+		        left: 368px;
+		        height: 100%;
 				.products-item{
+	      			color:$txt-brown-color;
 					display: inline-block;
 					width: 184px;
 					line-height: 70px;
 					font-size: 16px;
 				}
+		        .products-center{
+		          color:white;
+		        }
 			}
 		}
 	}
-}
-
-
-.products-on{
-	visibility: visible;
 }
 
 .left-active{  

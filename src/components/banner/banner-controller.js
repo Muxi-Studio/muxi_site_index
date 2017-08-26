@@ -22,8 +22,8 @@ export default class BannerController extends Component{
 		this.props.update(1)
 	};
 	render(props,{items}) {
-		// var arr = Array.from(new Array(items.length-1),(val,index)=>index)
-		// console.log(arr)
+		var class1 = "products-item products-center"
+		var class2 = "products-item"
 		return (
 			<div class="products-bottom">
 				<div class="products-controller">
@@ -34,7 +34,7 @@ export default class BannerController extends Component{
 							width: 184 * props.count + 'px',
 							left: 368 - props.current * 184 + 'px'}}>
 							{ items.map( (item, i) => (
-							<div class="products-item">{item}</div>
+							<div className={`${props.current === i ? class1:class2}`}>{item}</div>
 						)) }
 						</div>
 					</div>

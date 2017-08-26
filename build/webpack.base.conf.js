@@ -13,8 +13,8 @@ function resolve(dir) {
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        second: './src/second.js'
+        main: './src/product.js',
+        second: './src/group.js'
     },
     output: {
         path: path.join(__dirname, "../"),
