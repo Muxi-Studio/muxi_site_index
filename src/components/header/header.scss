@@ -39,7 +39,7 @@ header{
 
 .header-primary{
 	@include header-tag()
-	height: 50px;
+	height: 60px;
 	&:hover{
 		color: $txt-yellow-color;
 		cursor: pointer;
@@ -49,14 +49,16 @@ header{
 
 .header-center{
 	@include header-tag()
-	height: 70px;
+	height: 90px;
+	background:no-repeat center;
+	background-size:24%;
+	background-image:url('../../../static/image/logo.png');
 	&:before{
 		position: absolute;
 		top:0px;
 		left: $header-border-left;
 		content:'';
 		width: $header-border-width;
-		height: 40px;
 	}	
 }
 

@@ -81,7 +81,15 @@ $linear-border-width:4px;
 		}
 	}
 }
-
+.products-camera{
+	position: absolute;
+	bottom: 80px;
+	width:160px;
+	height: 126px;
+	background:no-repeat center;
+	margin: 0 auto;
+	background-image:url('../../../static/image/camera.png');
+}
 .products-right{
 	vertical-align: middle;
 	display:inline-block;

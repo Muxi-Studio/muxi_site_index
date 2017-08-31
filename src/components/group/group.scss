@@ -12,10 +12,10 @@ $group-adapt: 360deg / $group-count / 4;
 .group-controller{
 	position: absolute;
 	left:50%; 
-    top:50%;
-    border-radius: 50%;
-    transform:translate(-50%,-50%); 
-    -webkit-transform:translate(-50%,-50%);
+  top:50%;
+  border-radius: 50%;
+  transform:translate(-50%,-50%); 
+  -webkit-transform:translate(-50%,-50%);
 }
 
 
