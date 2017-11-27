@@ -1,0 +1,7 @@
+app:
+    build: .
+    env_file:
+        - muxi_index.env
+    command: gunicorn --name app -b 0.0.0.0:5488 -w 2 wsgi:app
+    ports:
+        - "5488:5488"
