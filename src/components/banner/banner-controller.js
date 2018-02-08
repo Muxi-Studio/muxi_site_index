@@ -1,12 +1,16 @@
 import { h, render, Component } from 'preact';
 import style from './banner.scss'
 import config from './const.js'
-import ConItem from './banner-con-item.js'
+// import ConItem from './banner-con-item.js'
 
 export default class BannerController extends Component{
 	constructor(props) {
-	    super();
-	    this.state.current = props.current
+		super();
+		this.state = {
+			current : props.current,
+			flag : 'left'
+		}
+		
 	}
 	componentWillMount(){
 		var items = []
@@ -14,6 +18,20 @@ export default class BannerController extends Component{
 			items.push(e.product)
 		})
 		this.setState({ items })		
+	}
+	componentDidMount(){
+		this.timer = setInterval(()=>{
+			if(this.props.current===this.props.count-1){
+				this.setState({flag : 'left'});
+			}else if(this.props.current===0){
+				this.setState({flag : 'right'});
+			}
+			this.state.flag === 'right'?this.switchRight():this.switchLeft();
+		},3000)
+		
+	}
+	componentWillUnmount(){
+		clearInterval(this.timer)
 	}
 	switchLeft = () => {
 		this.props.update(-1)
