@@ -8,27 +8,34 @@ export default class Group extends Component {
 	constructor(props) {
 	    super();
 	    this.state = {
-			groups : group,
-			
-			
-			
+			groups : group,	
+			current:props.current
 		}
+	}
+	componentWillMount(){
+		this.timer = setInterval(()=>{
+			this.props.current++;
+			this.setState({current:this.props.current})
+			let currentGroup = this.state.current%this.state.groups.length
+			this.props.select(currentGroup)
+		},3000)
+		
+	}
+	componentWillUnmount(){
+		clearInterval(this.timer)
 	}
 	selectGroup(e) {
 		this.props.select(e)
 	};
-	render(props, { groups }) {
+	render(props, { groups,current }) {
 		var class1 = "group-item group-on"
 		var class2 = "group-item"
-		var rotate = 72* props.current + 18
+		var rotate = 72* current + 18;
 		if(rotate>180){
 			rotate = rotate-360 + 'deg'
 		}else{
 			rotate = rotate + 'deg'
 		}
-		
-		
-		console.log(`rotate(${rotate})`)
 		return (
 			<div class="group-controller" >
 				<div class="circle-menu" >
@@ -37,7 +44,7 @@ export default class Group extends Component {
 						transform: `rotate(${rotate})`}}>
 						<div class="circle-menu-dot"></div>
 					</div>
-					<ul>
+					<ul className = "group-name">
 					{ groups.map( (item, i) => (
 						<li><a className={`circle-menu-${i}`} onClick={this.selectGroup.bind(this,i)}>{item.name}</a></li>
 					)) }

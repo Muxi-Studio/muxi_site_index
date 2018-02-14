@@ -1,6 +1,6 @@
 import {h,render,Component} from 'preact';
-import style from './banner.scss'
-import config from 'picture-config.js'
+import './join.scss'
+import config from './picture-config.js'
 
 
 export default class Join extends Component{
@@ -9,6 +9,9 @@ export default class Join extends Component{
         this.state.picture = config.picture.img
     }
     render({},{picture}){
-        return <BannerItem key={picture} />
+        <div>
+            <img src = {picture} className = "background-img" />
+            <button className="join-button"></button>
+        </div>
     }
 }

@@ -1,6 +1,5 @@
 const picture = {
-
-	img:""
+	img:"../../../static/image/join.png"
 }
 
 export default picture
