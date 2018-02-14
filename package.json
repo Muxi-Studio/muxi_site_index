@@ -4,7 +4,8 @@
   "description": "muxi site",
   "main": "ninja.conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":" node node_modules/ninja_cli2/src/bin/ninja start"
   },
   "repository": {
     "type": "git",
