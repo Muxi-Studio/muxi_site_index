@@ -7,7 +7,12 @@ import group from './const.js'
 export default class Group extends Component {	
 	constructor(props) {
 	    super();
-	    this.state.groups = group
+	    this.state = {
+			groups : group,
+			
+			
+			
+		}
 	}
 	selectGroup(e) {
 		this.props.select(e)
@@ -15,12 +20,19 @@ export default class Group extends Component {
 	render(props, { groups }) {
 		var class1 = "group-item group-on"
 		var class2 = "group-item"
-		var rotate = 72 * props.current + 18 + 'deg'
+		var rotate = 72* props.current + 18
+		if(rotate>180){
+			rotate = rotate-360 + 'deg'
+		}else{
+			rotate = rotate + 'deg'
+		}
+		
+		
 		console.log(`rotate(${rotate})`)
 		return (
-			<div class="group-controller">
-				<div class="circle-menu">
-					<div class="circle-menu-round" style={{
+			<div class="group-controller" >
+				<div class="circle-menu" >
+					<div class="circle-menu-round"  style={{
 						transitionDuration: '.8s',
 						transform: `rotate(${rotate})`}}>
 						<div class="circle-menu-dot"></div>

@@ -28,7 +28,7 @@ export default class Group extends Component {
 						<GroupItem key={this.state.currentGroup}/>
 					</PreactCSSTransitionGroup>
 				</div>
-				<GroupController select={this.selectGroup} current={this.state.currentGroup}/>
+				<GroupController select={this.selectGroup} current={this.state.currentGroup} />
 			</div>
 		);
 	}
