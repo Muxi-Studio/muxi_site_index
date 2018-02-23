@@ -23,7 +23,7 @@
     },{
       "name" : "home",
       "endpoint": "/join",
-      "template": "home",
+      "template": "join",
       "async": false
     },{
       "name": "second",

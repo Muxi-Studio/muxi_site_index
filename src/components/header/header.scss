@@ -38,7 +38,7 @@ header{
 }
 
 .header-primary{
-	@include header-tag()
+	@include header-tag();
 	height: 60px;
 	&:hover{
 		color: $txt-yellow-color;
@@ -48,7 +48,7 @@ header{
 }
 
 .header-center{
-	@include header-tag()
+	@include header-tag();
 	height: 90px;
 	background:no-repeat center;
 	background-size:24%;

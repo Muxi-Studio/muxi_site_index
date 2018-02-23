@@ -1,4 +1,15 @@
+
+@import "../../styles/base.scss";
 .background-img{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    position: absolute;
+    left: 198/1280*100vw;
+    top: 84/700*100vh;
+}
+img{
+
+    width: 887/1280*100vw;
+    height: 534/700*100vh;
+
 }
