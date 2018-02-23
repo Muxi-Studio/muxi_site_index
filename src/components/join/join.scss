@@ -7,9 +7,19 @@
     left: 198/1280*100vw;
     top: 84/700*100vh;
 }
-img{
+.background1{
 
     width: 887/1280*100vw;
     height: 534/700*100vh;
 
+}
+.background-button{
+    position: absolute;
+    left: 548/1280*100vw;
+    top: 570/700*100vh;
+}
+.background2{
+    width: 176/1280*100vw;
+    height: 69/700*100vh;
+    cursor: pointer;
 }

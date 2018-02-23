@@ -1,7 +1,7 @@
 import {h,render,Component} from 'preact';
 import './join.scss'
-// import config from './picture-config.js'
- import picture from '../../../static/image/join2.png'
+import button from '../../../static/image/join_button.png'
+import picture from '../../../static/image/join2.png'
 
 export default class Join extends Component{
     constructor(props){
@@ -9,11 +9,18 @@ export default class Join extends Component{
         //this.state.picture = config.img
         // console.log('into')
     }
+    handleJoin(){
+        window.location = 'https://baidu.com';
+    }
     render({},{}){
         return(
-        <div className = "background-img" >
-            <img src = {picture} />
-            {/* <button className="join-button">1</button> */}
+            <div>
+                <div className = "background-img" >
+                    <img src = {picture} className = 'background1'/>    
+                </div>
+            <div className = 'background-button'>
+                <img src = {button} className = 'background2' onClick = {this.handleJoin.bind(this)}/>
+            </div>
         </div>
         )
        
