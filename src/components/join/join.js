@@ -6,8 +6,7 @@ import picture from '../../../static/image/join2.png'
 export default class Join extends Component{
     constructor(props){
         super();
-        //this.state.picture = config.img
-        // console.log('into')
+       
     }
     handleJoin(){
         window.location = 'https://baidu.com';

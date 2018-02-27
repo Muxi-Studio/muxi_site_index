@@ -15,7 +15,8 @@ module.exports = {
     entry: {
         main: './src/product.js',
         second: './src/group.js',
-        join:'./src/join.js'
+        join:'./src/join.js',
+        intro:'./src/intro.js'
     },
     output: {
         path: path.join(__dirname, "../"),
@@ -104,6 +105,13 @@ module.exports = {
             inject: false,
             template: path.join(__dirname, '../templates/join.ejs'),
             chunks:['join']
+        }),
+        new HtmlWebpackPlugin({
+        	alwaysWriteToDisk: true,
+            filename: 'templates/intro.html',
+            inject: false,
+            template: path.join(__dirname, '../templates/intro.ejs'),
+            chunks:['intro']
         }),
         new HtmlWebpackHarddiskPlugin()
     ]

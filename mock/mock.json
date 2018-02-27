@@ -18,7 +18,7 @@
     },{
       "name" : "home",
       "endpoint": "/member",
-      "template": "home",
+      "template": "intro",
       "async": false
     },{
       "name" : "home",
