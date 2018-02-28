@@ -1,19 +1,40 @@
-import {h,render,Component} from 'preact';
+import { h, render, Component } from 'preact'
 import './intro.scss'
 import info from './info.js'
 import Card from './intro_card'
+import Introgroup from './intro-controller'
 
 export default class Intro extends Component{
     constructor(props){
         super();
-        console.log(info)
-        this.state.information = info;
+       
+        this.state = {
+            information : info,
+            currentTag:'后台',
+            currentGroup:0
+            
+        }
+        //console.log(this.state.information[this.state.currentGroup])
     }
+    selectGroup = (e) =>{
     
-    render({},{information}){
+        this.setState(
+            {
+            currentGroup:e,
+            currentTag:this.state.information[e].tag
+        })
+    }
+    render({},{information,currentGroup,currentTag}){
         return(
             <div>
-               <Card info ={information} /> 
+                      
+              <div className = "intro-card-containner">
+                   {information[currentGroup].people.map((person,index)=>{
+                   return <Card info ={person} tag={currentTag} /> 
+                   })}
+             </div>
+         
+               <Introgroup select = {this.selectGroup} current = {currentGroup} />
            </div>
         )
        

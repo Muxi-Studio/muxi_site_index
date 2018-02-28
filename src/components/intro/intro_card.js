@@ -3,18 +3,16 @@ import style from './intro.scss'
 export default class Card extends Component{
     constructor(props){
         super();
-        console.log(props.info)
-        this.state = {
-            info : props.info
-        }
     }
-    render(props,{info}){
+    render(props,{}){
         return(
-            <div class ="intro-card">
-            <div class = "intro-photo" style = {{backgroundImg:info.photo}}></div>
-            <div class = "intro-position" style={{backgroundColor: info.position === '组长'?"rgb(253, 172, 31)": "rgb(170, 170, 170)" }}>{info.position}</div>
-            <div class = "intro-name">姓名：{info.name}</div>
-            <div class = "intro-tag">组别：{info.tag}</div>
+        <div className = "intro-card-father">
+        <div className ="intro-card">
+            <div className = "intro-photo" style = {{backgroundImage:`url(${props.info.photo})`}}></div>
+            <div className = "intro-position" style={{backgroundColor:props.info.position === '组长'?"rgb(253, 172, 31)": "rgb(170, 170, 170)" }}>{props.info.position}</div>
+            <div className = "intro-name">姓名：{props.info.name}</div>
+            <div className = "intro-tag">组别：{props.tag}</div>
+        </div>
         </div>
         )
         

@@ -1,6 +1,12 @@
+
+html{
+    
+    overflow-x: hidden; 
+    overflow-y: auto;
+    }
 .intro-card{
-    width: 133/1280*100vw;
-    height: 202/700*100vh;
+    max-width: 133/1280*100vw;
+    min-height: 202/700*100vh;
     background-color: rgb(55, 75, 84);
     border-radius:15%;
 }
@@ -8,22 +14,23 @@
     width: 78px;
     height: 78px;
     border-radius: 50%;
-    background-color: pink;
+    // background-color: pink;
     position: relative;
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
+    background-size: contain;
 }
 .intro-position{
     position: relative;
     top: 10px;
     left: 30px;
     width: 37px;
-    height: 17px;
+    height: 20px;
     background-color: rgb(253, 172, 31);
     color:white;
-    border-radius: 35%;
-
+    border-radius: 50%;
+    text-align: center;
 }
 .intro-name{
     margin-top: 25px;
@@ -32,3 +39,92 @@
 .intro-tag{
     text-align: center;
 }
+
+
+.intro-card-containner{
+    
+    margin-left: 120/1280*100vw;
+    margin-top: 50/700*100vh;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.intro-card-father{
+    margin-top: 40/700*100vh;
+    width: 18%;
+}
+.intro-controller{
+    position: fixed;
+    bottom:10/700*100vh;
+    // top: 10/700*100vh;
+    // margin-top: 40/700*100vh;
+    background-image: url('../../../static/image/foot.png');
+    background-size: cover;
+    // background-repeat: no-repeat;
+    
+    height:89/700*100vh;
+    width: 100%;
+    
+   
+}
+.controller-containner{
+     margin-left:96/1280*100vw;
+}
+li{
+ list-style:none;
+ width: 20%;
+//  margin-top: 3%;
+// display: inline;
+line-height:85/700*100vh; 
+}
+.intro-tags{
+
+ display: flex;
+ width: 100%;
+
+}
+
+
+ .intro-card{
+    
+    transform: rotateY(0deg);
+    transition: all 0.50s ease-in-out 0s;
+}
+.intro-card:hover {
+    transform: rotateY(-90deg);
+}
+
+.box-content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    transform: rotateY(90deg);
+    transition: all 0.50s ease-in-out 0s;
+}
+.intro-card-father:hover .box-content{
+    transform: rotateY(0deg);
+}
+// .box .title{
+//     font-size: 20px;
+//     color: #fff;
+//     text-transform: uppercase;
+// }
+// .box .description{
+//     font-size: 14px;
+//     line-height: 24px;
+//     color: #fff;
+// }
+// .box .title:after,
+// .box .description:after{
+//     content: "";
+//     width: 80%;
+//     display: block;
+//     border-bottom: 1px solid #fff;
+//     margin: 15px auto;
+// }
