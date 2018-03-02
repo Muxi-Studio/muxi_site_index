@@ -43,8 +43,8 @@ export default class Header extends Component {
 		return (
 			<header>
 				<div class="header-wrap">
-					{ header.map( item => (
-						<div class={item.style}><a class="header-word" href={item.route}>{item.name}</a></div>
+					{ header.map( (item ,i)=> (
+						<div class={item.style}><a className ={` header-word  ${i===2?"team-name":""}` } href={item.route}>{item.name}</a></div>
 					)) }
 				</div>
 			</header>
