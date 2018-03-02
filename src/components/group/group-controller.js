@@ -18,14 +18,15 @@ export default class Group extends Component {
 			this.setState({current:this.props.current})
 			let currentGroup = this.state.current%this.state.groups.length
 			this.props.select(currentGroup)
-		},3000)
+		},5000)
 		
 	}
 	componentWillUnmount(){
 		clearInterval(this.timer)
 	}
 	selectGroup(e) {
-		this.props.select(e)
+		this.props.select(e);
+		this.setState({current:e});
 	};
 	render(props, { groups,current }) {
 		var class1 = "group-item group-on"
@@ -46,7 +47,7 @@ export default class Group extends Component {
 					</div>
 					<ul className = "group-name">
 					{ groups.map( (item, i) => (
-						<li><a className={`circle-menu-${i}`} onClick={this.selectGroup.bind(this,i)}>{item.name}</a></li>
+						<li><a className={`circle-menu-${i} ${current == i ? 'onGroup':'notOnGroup'}`} onClick={this.selectGroup.bind(this,i)}>{item.name}</a></li>
 					)) }
 					</ul>
 				</div>

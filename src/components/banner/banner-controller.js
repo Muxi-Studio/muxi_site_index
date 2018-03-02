@@ -27,7 +27,7 @@ export default class BannerController extends Component{
 				this.setState({flag : 'right'});
 			}
 			this.state.flag === 'right'?this.switchRight():this.switchLeft();
-		},3000)
+		},5000)
 		
 	}
 	componentWillUnmount(){

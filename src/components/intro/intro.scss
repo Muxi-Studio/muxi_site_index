@@ -44,7 +44,9 @@ html{
 .intro-card-containner{
     
     margin-left: 120/1280*100vw;
-    
+    max-height: 500px;
+    overflow-y:scroll;
+    overflow-x: hidden;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -60,7 +62,7 @@ html{
     bottom:10/700*100vh;
     right: 0;
     // top: 10/700*100vh;
-    // margin-top: 10/700*100vh;
+    margin-top: 66/700*100vh;
     background-image: url('../../../static/image/foot.png');
     background-size: cover;
     background-position:center;
@@ -72,14 +74,52 @@ html{
    
 }
 .controller-containner{
-      margin-left:85/1280*100vw;
+    //   margin-left:85/1280*100vw;
 }
 li{
  list-style:none;
- width: 20%;
+ //margin-left: auto;
+ text-align: center;
+ //width: 18.5%;
 //  margin-top: 3%;
 // display: inline;
 line-height:70/700*100vh; 
+}
+
+@media screen and (max-width:1024px) {
+    li{
+        width: 17.8%;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1280px) {
+    li{
+        width: 18%;
+    }
+}
+@media screen and (min-width:1281px) and (max-width:1440px) {
+    li{
+        width: 18.2%;
+    }
+}
+@media screen and (min-width:1441px) and (max-width:1920px) {
+    li{
+        width: 18.5%;
+    }
+}
+@media screen and (min-width:1921px) and (max-width:2560px) {
+    li{
+        width: 18.7%;
+    }
+}
+@media screen and (min-width:2561px) and (max-width:3328px) {
+    li{
+        width: 19%;
+    }
+}
+@media screen and (min-width:3329px) {
+    li{
+        width: 19.2%;
+    }
 }
 .intro-tags{
 
@@ -113,12 +153,12 @@ line-height:70/700*100vh;
 .intro-card-father:hover .intro-content{
     transform: rotateY(0deg);
 }
-a{
+li>a{
     font-size: 20px;
     cursor:pointer;
 }
 li>.onTag{
     font-size: 25px;
     color:rgb(250,174,28) ; 
-    text-shadow:0 0 6px rgb(250,174,28), -1px -1px #FFF, 1px -1px #444;
+    text-shadow:2px 2px 6px rgb(250,174,28), -1px -1px #FFF, 1px -1px #444;
 }

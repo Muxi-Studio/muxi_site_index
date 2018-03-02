@@ -92,4 +92,9 @@ $group-adapt: 360deg / $group-count / 4;
   opacity: 0.01;
   transition: opacity 300ms ease-in;
 }
+.onGroup{
+  font-size: 15px;
+  color:rgb(250,174,28) ; 
+  text-shadow:0 0 6px rgb(250,174,28);
+}
 

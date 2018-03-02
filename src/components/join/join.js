@@ -14,16 +14,6 @@ export default class Join extends Component{
     render({},{}){
         return(
             <div>
-                {/* <div className = "fallingLeaves">
-                <span></span>
-                <span></span>
-                <span style = "position:relative;left:90%"></span>
-                <span style = "position:relative;left:5%;top:15%;"></span>
-                <span  style = "position:relative;left:10%;top:5%;"></span>
-                <span  style = "position:relative;left:15%;top:10%;"></span>
-                <span style = "position:relative;left:85%;top:10%;"></span>
-                <span style = "position:relative;left:95%;top:8%;"></span>
-                </div> */}
                 <Petal />
                 <div className = "background-img" >
                     <img src = {picture} className = 'background1'/>    
