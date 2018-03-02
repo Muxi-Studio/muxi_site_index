@@ -13,6 +13,7 @@ export default class Introgroup extends Component{
     }
     selectTag(e){
         this.props.select(e);
+        this.setState({current:e})
     }
     render(props,{information,current}){
       return(
@@ -21,7 +22,7 @@ export default class Introgroup extends Component{
                 <ul className =  "intro-tags">
                 {information.map((item,index)=>{
                     return(<li>
-                        <a  className ={`intro-tag ${index}  ${current == index ? 'onTag':'notOnTag'}`}   onClick={this.selectTag.bind(this,index)}>{item.tag}组</a>
+                        <a  className ={`${current == index ? 'onTag':'notOnTag'}`}   onClick={this.selectTag.bind(this,index)}>{item.tag}组</a>
                     </li>)
                     
                 })}

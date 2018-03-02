@@ -44,7 +44,7 @@ html{
 .intro-card-containner{
     
     margin-left: 120/1280*100vw;
-    margin-top: 50/700*100vh;
+    
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -58,11 +58,13 @@ html{
 .intro-controller{
     position: fixed;
     bottom:10/700*100vh;
+    right: 0;
     // top: 10/700*100vh;
-    // margin-top: 40/700*100vh;
+    // margin-top: 10/700*100vh;
     background-image: url('../../../static/image/foot.png');
     background-size: cover;
-    // background-repeat: no-repeat;
+    background-position:center;
+    background-repeat: no-repeat;
     
     height:89/700*100vh;
     width: 100%;
@@ -70,14 +72,14 @@ html{
    
 }
 .controller-containner{
-     margin-left:96/1280*100vw;
+      margin-left:85/1280*100vw;
 }
 li{
  list-style:none;
  width: 20%;
 //  margin-top: 3%;
 // display: inline;
-line-height:85/700*100vh; 
+line-height:70/700*100vh; 
 }
 .intro-tags{
 
@@ -111,21 +113,11 @@ line-height:85/700*100vh;
 .intro-card-father:hover .intro-content{
     transform: rotateY(0deg);
 }
-// .box .title{
-//     font-size: 20px;
-//     color: #fff;
-//     text-transform: uppercase;
-// }
-// .box .description{
-//     font-size: 14px;
-//     line-height: 24px;
-//     color: #fff;
-// }
-// .box .title:after,
-// .box .description:after{
-//     content: "";
-//     width: 80%;
-//     display: block;
-//     border-bottom: 1px solid #fff;
-//     margin: 15px auto;
-// }
+a{
+    font-size: 20px;
+}
+li>.onTag{
+    font-size: 25px;
+    color:rgb(250,174,28) ; 
+    text-shadow:0 0 6px rgb(250,174,28), -1px -1px #FFF, 1px -1px #444;
+}
