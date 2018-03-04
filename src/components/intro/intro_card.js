@@ -13,9 +13,10 @@ export default class Card extends Component{
             <div className = "intro-name">姓名：{props.info.name}</div>
             <div className = "intro-tag">组别：{props.tag}</div>
             <div className = 'intro-content'>
-            <div className='intro-words'>
-            <h2>座右铭：</h2>
-            {props.info.intro}
+            <div className='intro-words-container'>
+                <div className = 'intro-words'>座右铭</div>
+                {props.info.intro}
+                
             </div>
             </div>
         </div>

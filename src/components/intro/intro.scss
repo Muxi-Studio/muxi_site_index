@@ -149,8 +149,12 @@ line-height:70/700*100vh;
     background: rgba(0,0,0,0.7);
     transform: rotateY(90deg);
     transition: all 0.50s ease-in-out 0s;
+    font-size: 13px;
+  
 }
-
+.intro-words-container{
+    padding:7%  5%;
+}
 .intro-card-father:hover .intro-content{
     transform: rotateY(0deg);
 }
@@ -162,4 +166,13 @@ li>.onTag{
     font-size: 25px;
     color:rgb(250,174,28) ; 
     text-shadow:2px 2px 6px rgb(250,174,28), -1px -1px #FFF, 1px -1px #444;
+}
+.intro-words{
+    width:41.7%;
+    height: 23.4%;
+    background-color: rgb(253, 172, 31);
+    color:white;
+    border-radius:135px;
+    margin: 8% auto;
+    font-size: 16px;
 }
