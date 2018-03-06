@@ -10,14 +10,14 @@ export default class Intro extends Component{
        
         this.state = {
             information : info,
-            currentTag:'后台',
+            currentTag:'后端',
             currentGroup:0
             
         }
         //console.log(this.state.information[this.state.currentGroup])
     }
     selectGroup = (e) =>{
-    
+        console.log('e'+e)
         this.setState(
             {
             currentGroup:e,

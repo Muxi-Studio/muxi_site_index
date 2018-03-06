@@ -23,10 +23,12 @@ html{
     background-size: contain;
 }
 .intro-position{
+    font-size:smaller;
+    display: inline-block;
     position: relative;
     top: 10px;
     left: 30px;
-    width: 45px;
+    min-width: 45px;
     height: 20px;
     background-color: rgb(253, 172, 31);
     color:white;
@@ -34,11 +36,14 @@ html{
     text-align: center;
 }
 .intro-name{
+    margin-left: 20%;
     margin-top: 25px;
-    text-align: center;
+
+    // text-align: center;
 }
 .intro-tag{
-    text-align: center;
+    margin-left: 20%;
+    //text-align: center;
 }
 
 

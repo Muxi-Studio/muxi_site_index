@@ -1,5 +1,10 @@
 
 @import "../../styles/base.scss";
+html{
+    
+    overflow-x: hidden; 
+    overflow-y: auto;
+    }
 .background-img{
     width: 100vw;
     height: 100%;
