@@ -9,6 +9,7 @@ export default class Group extends Component {
 	    this.state = group[props.key]
 	}
 	render({ }, { }) {
+	
 		return (
 			<div class="products-content">
 				<div class="products-left">

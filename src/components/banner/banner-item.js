@@ -7,15 +7,21 @@ export default class BannerItem extends Component{
 	    super();
 	    this.state = config[props.key]
 	}
+	componentWillUnmount(){
+		this.setState({product,type,intro,href})
+	}
 	render(props,{}) {
 		let width = 100 / props.count + '%';
 		return (
 				<div class="products-intro" style={{width: width}}>
+				
 					<div class="products-content products-on">
 						<div class="products-left">
 							<div class="products-left-content">
 								<h1>{this.state.product}</h1>
+								
 								<div class="products-des">
+								<div class = "products-des-icon"></div>
 					                <span class="products-des-txt">{this.state.type}</span>
 				                </div>
 								<div>{this.state.intro}</div>

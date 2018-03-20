@@ -4,6 +4,7 @@ import group from './const.js'
 import GroupItem from './group-item.js'
 import GroupController from './group-controller.js'
 import PreactCSSTransitionGroup from 'preact-css-transition-group'
+import Flower from "../flower/flower"
 /** @jsx h */
 
 export default class Group extends Component {	
@@ -20,6 +21,7 @@ export default class Group extends Component {
 	render({ }, { }) {
 		return (
 			<div class="products-wrap">
+			<Flower />
 				<div class="products-intro">
 					<PreactCSSTransitionGroup          
 					transitionName="example"

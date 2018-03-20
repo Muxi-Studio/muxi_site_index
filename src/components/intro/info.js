@@ -5,7 +5,7 @@ const info  = [
         tag:'后端',
         people:[
             {
-                position:"ex组长",
+                position:"二代目",
                 name:"刘聪",
                 photo:"http://7xrvvt.com1.z0.glb.clouddn.com/06CC00EB-CBA3-4DC9-B4F4-05AE0BCC66CF-10816-00000965F12D03B4_tmp.JPG",
                 intro:"今天不接任何需求= =",
@@ -14,7 +14,7 @@ const info  = [
                 position:"首席教育官",
                 name:"余依蕾",
                 photo: "http://ohr9krjig.bkt.clouddn.com/109951163040838276.jpg" , 
-                intro: "介绍一下自己"
+                intro: "介绍加载失败..."
               },
               {
                 position:"组长",
@@ -100,7 +100,7 @@ const info  = [
                 position:"组长",
                 name:"蔡茹芸",
                 photo:"http://ourrzxc82.bkt.clouddn.com//frontend/cairuyun.jpg",
-                intro:"这个人很懒，什么也没留下哦"
+                intro:"正在渲染中..."
             },
             {
               position: "组员",
@@ -210,36 +210,43 @@ const info  = [
         tag:'安卓',
         people:[
             {
-                position:"组长",
-                name:'大红',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"生命不息，奋斗不止"
-            },
-            {
-                position:"组员",
-                name:'大蓝',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
-            },
-            {
-                position:"组员",
-                name:'大绿',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
-            },
-            {
-                position:"组员",
-                name:'大粉',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
-            },
-            {
-                position:"组员",
-                name:'大灰',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
-            }
-
+                "position":"一代目",
+                "name":"冯敏超",
+                "photo":"http://ourrzxc82.bkt.clouddn.com//android/fengminchao.jpg",
+                "intro":"我的膜法将会把你撕成碎片"
+                },
+                {
+                    position: "卫生部长",
+                    name: "底衫不二",
+                    photo: "http://oe90x7ww9.bkt.clouddn.com/%E5%8D%9A%E5%AE%A2%E5%A4%B4%E5%83%8F.jpg", 
+                    intro: "我已经决定吃自己喜欢的东西,过短命的人生了" 
+                },
+                {
+                        "position": "组长",
+                        "name": "石泽远",
+                        "photo": "http://ourrzxc82.bkt.clouddn.com//android/shizeyuan.jpg",
+                        "intro": "YOU ARE NOT BRAVE, MAN ARE BRAVE"
+                },
+                {
+                    "position": "组员",
+                    "name": "彭敏悦",
+                    "photo": "http://ourrzxc82.bkt.clouddn.com//android/pengminyuejpg",
+                    "intro": "做任何自己觉得有意义的事"
+                },
+                {
+                      "position":"组员",
+                       "name":"王鹏宇",
+                       "photo":"http://ourrzxc82.bkt.clouddn.com//android/wangpengyu.jpeg",
+                  "intro":"我是要励志成为编程界的梅西的男人"
+                },
+                {
+                    position: "组员",
+                    name: "夏玮蔚",
+                    photo: "http://ourrzxc82.bkt.clouddn.com//android/xiaweiwei.jpg",
+                    intro: "这个人很懒，还没有自己的简介哦～"
+                }
+                
+                
         ]
     },
 

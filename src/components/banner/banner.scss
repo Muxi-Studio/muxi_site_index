@@ -36,6 +36,7 @@ $linear-border-width:4px;
 		font-size: 20px;
 		line-height: 40px;
 		.products-des{
+			margin-top: -30px;
 			margin-bottom: 10px;
 			.products-des-tag{
 				width:30px;
@@ -43,9 +44,12 @@ $linear-border-width:4px;
 				vertical-align: middle;
 			}
 			.products-des-txt{
+				
+				margin-left: 30/1280*100vw;
 				vertical-align: middle;
 				color: #f8b01a;
 				font-size: 16px;
+				font-weight: bold;
 			}
 		}
 		.products-btn{
@@ -81,6 +85,13 @@ $linear-border-width:4px;
 		}
 	}
 }
+.products-des-icon{
+	position: relative;
+   top: 30px;
+	width: 21px;
+	height: 20px;
+	background-image: url("https://occc3ev3l.qnssl.com/index_site/icon_IOS.png")
+}
 .products-camera-containner{
 
 	width:100%;
@@ -98,12 +109,26 @@ $linear-border-width:4px;
 	
 }
 .products-camera-bgr-inner{
+	//position: relative;
 	margin-left: 50%;
 	transform: translateX(-50%) translateY(-1px);
 	height: 100%;
 	width: 60px;
 	background-color: #152025;
 	border:1px solid  #152025;	
+	
+}
+.products-camera-bgr-inner2{
+	
+	margin-top: -32%;
+	transform:  translateX(-1px);
+	// transform: translateY(-50%) ;
+	//translateY(-1px);
+	//vertical-align: middle;
+	height: 15px;
+	width: 80px;
+	background-color: #152025;
+	border:1px solid   #152025;	
 	
 }
 .products-camera{

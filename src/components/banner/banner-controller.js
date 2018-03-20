@@ -51,7 +51,9 @@ export default class BannerController extends Component{
 					<div class="controller-btn btn-left" onClick={this.switchLeft}></div>
 					<div class="products-cnt-text">
 					<div className = "products-camera-bgr">
-						<div className = "products-camera-bgr-inner">
+						<div className = "products-camera-bgr-inner">	</div>
+						<div className = "products-camera-bgr-inner2">
+					
 						</div>
 					</div>
 						<div class="text" style={{

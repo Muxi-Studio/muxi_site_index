@@ -1,0 +1,14 @@
+.staticLeaves{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.staticLeaves span{
+    width: 30px;
+    height: 30px;
+    background-repeat:no-repeat!important;
+    background-size: auto;
+    background-position: center;
+    background:url("../../../static/image/logo.png");
+    opacity:0.5;
+}
