@@ -22,8 +22,10 @@ export default class BannerItem extends Component{
 								<button class="products-btn">下载地址</button>
 							</div>
 						</div>
-						<div class="products-right" style = {{backgroundImg:this.state.img}}></div>
+
+						<div class="products-right" style = {{backgroundImage:`url(${this.state.img})`}}></div>
 					</div>
+					
 				</div>
 		);
 	}

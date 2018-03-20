@@ -11,12 +11,18 @@ export default class Banner extends Component {
 	    super();
 	    this.state.countPage = config.length
 	}
+//	console.log(config[this.state.currentPage]);
 	state = {
 		currentPage:0,
+		icon : config[0].icon
 	};
 	updateItem = (e) =>{
 		if(!(this.state.currentPage<=0&&e==-1 || this.state.currentPage >= this.state.countPage -1 && e==1)){
-			this.setState({currentPage: this.state.currentPage + e})
+			
+			this.setState(
+				{currentPage: this.state.currentPage + e,
+				icon : config[this.state.currentPage + e].icon
+			})
 		}
 	};
 	render({ }, { }) {
@@ -32,7 +38,7 @@ export default class Banner extends Component {
 						<BannerItem key={item} count={this.state.countPage}/>
 					)) }
 				</div>
-				<BannerController update={this.updateItem} current = {this.state.currentPage} count ={this.state.countPage}/>
+				<BannerController update={this.updateItem} current = {this.state.currentPage} count ={this.state.countPage} icon = {this.state.icon}/>
 			</div>
 		);
 	}

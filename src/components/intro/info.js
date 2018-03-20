@@ -173,35 +173,36 @@ const info  = [
         tag:'产品',
         people:[
             {
-                position:"组长",
-                name:'大红',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"生命不息，奋斗不止"
+                position: "组长",
+                name: "杨哲盈",
+                photo: "http://ourrzxc82.bkt.clouddn.com//product/yangzheying.jpg",
+                intro: "自我差别化  随心不逐流"
             },
             {
-                position:"组员",
-                name:'大蓝',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
+                position: "组员",
+                name: "查思羽",
+                photo: "http://ourrzxc82.bkt.clouddn.com//product/zhasiyu.jpg",
+                intro: "刚好学习不食人间烟火"
             },
             {
-                position:"组员",
-                name:'大绿',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
+                position: "组员",
+                name: "王涵",
+                photo: "http://ourrzxc82.bkt.clouddn.com//product/wanghan.jpg",
+                intro: "明日池塘是绿茵"
             },
             {
-                position:"组员",
-                name:'大粉',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
+                position: "组员",
+                name: "陈雅澜",
+                photo: "http://ourrzxc82.bkt.clouddn.com//product/chenyalan.jpg",
+                intro: "Only the paraniod survived. "
             },
             {
-                position:"组员",
-                name:'大灰',
-                photo:"https://avatars2.githubusercontent.com/u/22490787?s=460&v=4",
-                intro:"黑夜给了我黑色的眼睛，我却用它寻找光明"
+                position: "组员",
+                name: "贺庆玲",
+                photo: "http://ourrzxc82.bkt.clouddn.com//product/heqingling.jpg",
+                intro: "很多失败不是因为能力有限，而是因为没有坚持到底"
             }
+            
 
         ]
     },

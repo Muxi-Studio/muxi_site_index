@@ -3,17 +3,17 @@
     {
       "name" : "home",
       "endpoint": "/",
-      "template": "home",
+      "template": "second",
       "async": false
     },{
       "name" : "home",
       "endpoint": "/intro",
-      "template": "home",
+      "template": "second",
       "async": false
     },{
       "name" : "home",
       "endpoint": "/product",
-      "template": "second",
+      "template": "home",
       "async": false
     },{
       "name" : "home",

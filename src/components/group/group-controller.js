@@ -12,18 +12,18 @@ export default class Group extends Component {
 			current:props.current
 		}
 	}
-	componentWillMount(){
-		this.timer = setInterval(()=>{
-			this.props.current++;
-			this.setState({current:this.props.current})
-			let currentGroup = this.state.current%this.state.groups.length
-			this.props.select(currentGroup)
-		},5000)
+	// componentWillMount(){
+	// 	this.timer = setInterval(()=>{
+	// 		this.props.current++;
+	// 		this.setState({current:this.props.current})
+	// 		let currentGroup = this.state.current%this.state.groups.length
+	// 		this.props.select(currentGroup)
+	// 	},5000)
 		
-	}
-	componentWillUnmount(){
-		clearInterval(this.timer)
-	}
+	// }
+	// componentWillUnmount(){
+	// 	clearInterval(this.timer)
+	// }
 	selectGroup(e) {
 		this.props.select(e);
 		this.setState({current:e});

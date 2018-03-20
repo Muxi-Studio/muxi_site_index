@@ -13,7 +13,7 @@ $linear-border-width:4px;
   position: relative;
 }
 .products-intro{
-  	display:inline-block;
+  display:inline-block;
 	height: 100%;
 	position: relative;
 }
@@ -81,24 +81,62 @@ $linear-border-width:4px;
 		}
 	}
 }
-.products-camera{
+.products-camera-containner{
+
+	width:100%;
+	height: 126px;
+
+}
+.products-camera-bgr{
 	position: absolute;
-	bottom: 80px;
+	margin-left: 50%;
+	 transform: translateX(-50%) translateY(60%);
+	 height: 31px;
+	 width: 80px;
+	 background-color: #152025;
+		border:1px solid rgb(187,158,13);
+	
+}
+.products-camera-bgr-inner{
+	margin-left: 50%;
+	transform: translateX(-50%) translateY(-1px);
+	height: 100%;
+	width: 60px;
+	background-color: #152025;
+	border:1px solid  #152025;	
+	
+}
+.products-camera{
+  z-index: -1;
+	transform:translateX(10%) translateY(-119px);
+	text-align: center;
 	width:160px;
 	height: 126px;
 	background:no-repeat center;
 	margin: 0 auto;
-	background-image:url('../../../static/image/camera.png');
+	 background-image:url('../../../static/image/camera.png');
+}
+.prodcuts-icon{
+	z-index: -1;
+	transform:translateX(-50%) translateY(-235px);
+	text-align: center;
+	width:30px;
+	height: 30px;
+	background:no-repeat center;
+	margin: 0 auto;
+	//background-image:url('../../../static/image/icon_xiazi.png');
 }
 .products-right{
 	vertical-align: middle;
 	display:inline-block;
+	margin-top: 5%;
 	width: 30%;
-	height: 100%;
-	background-image: url('../../../static/image/ccnubox.png');
+	height: 80%;
+//	background-image: url('../../../static/image/ccnubox.png');
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 90%;
+//	background-size: 80%;
 }
 
 .products-bottom{
@@ -114,6 +152,7 @@ $linear-border-width:4px;
 		display: flex;
     	align-items: center;
 		.controller-btn{
+			cursor: pointer; 
 			width: 0;
 			height: 0;
 			border: solid;
@@ -139,14 +178,16 @@ $linear-border-width:4px;
 		        left: 368px;
 		        height: 100%;
 				.products-item{
-	      			color:$txt-brown-color;
+	      	color:$txt-brown-color;
 					display: inline-block;
 					width: 184px;
 					line-height: 70px;
 					font-size: 16px;
 				}
 		        .products-center{
-		          color:white;
+							
+							color:white;
+
 		        }
 			}
 		}

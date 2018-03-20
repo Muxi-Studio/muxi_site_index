@@ -17,7 +17,7 @@ export default class Group extends Component {
 						<div>{this.state.intro}</div>
 					</div>
 				</div>
-				<div class="products-right"></div>
+				<div class="products-right"  style = {{backgroundImage:`url(${this.state.img})`}}></div>
 			</div>
 		);
 	}

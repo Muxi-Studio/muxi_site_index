@@ -17,7 +17,6 @@ export default class Intro extends Component{
         //console.log(this.state.information[this.state.currentGroup])
     }
     selectGroup = (e) =>{
-        console.log('e'+e)
         this.setState(
             {
             currentGroup:e,
