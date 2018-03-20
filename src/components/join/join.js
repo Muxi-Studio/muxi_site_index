@@ -14,7 +14,7 @@ export default class Join extends Component{
         }
     }
     handleJoin(){
-        window.location = 'https://baidu.com';
+        window.location = 'http://cn.mikecrm.com/WunsXK';
     }
     render({},{}){
         return(

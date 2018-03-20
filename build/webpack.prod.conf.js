@@ -15,7 +15,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         }
     },
     module: {
-        noParse: []
+        noParse: /react\.runtime\.min\.js/
     },
     output: {
         path: config.build.assetsRoot,
