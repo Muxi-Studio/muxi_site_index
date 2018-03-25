@@ -29,7 +29,7 @@ export default class Join extends Component{
                     <br />
                     <strong>校内：</strong>
                     <br />
-                    华师匣子最高安装量破万（其中Android用户8000+，iOS用户2000+）
+                    华师匣子最高安装量破万<br />（其中Android用户8000+，iOS用户2000+）
                     <br />
                     <br />
                     <strong>
