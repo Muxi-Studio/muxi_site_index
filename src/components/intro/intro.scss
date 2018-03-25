@@ -5,7 +5,8 @@ html{
     overflow-y: auto;
     }
 .intro-card{
-    max-width: 133/1280*100vw;
+    max-width: 140/1280*100vw;
+    min-width: 140px;
     min-height: 202/700*100vh;
     background-color: rgb(55, 75, 84);
     border-radius:15%;
@@ -49,7 +50,8 @@ html{
 
 .intro-card-containner{
     
-    margin-left: 120/1280*100vw;
+    padding-left: 120/1280*100vw;
+    padding-right: 120/1280*100vw;
     max-height: 540px;
     overflow-y:scroll;
     overflow-x: hidden;
@@ -60,8 +62,12 @@ html{
 }
 
 .intro-card-father{
+    flex-wrap: wrap;
     margin-top: 40/700*100vh;
-    width: 18%;
+    //width: 18%;
+    min-width:140/1280*100vw;
+    // min-width:133px;
+    margin-right: 100px;
 }
 .intro-controller{
     position: fixed;
@@ -145,6 +151,7 @@ line-height:70/700*100vh;
 // }
 
 .intro-content{
+    border-radius:15%;
     width: 100%;
     height: 100%;
     position: absolute;

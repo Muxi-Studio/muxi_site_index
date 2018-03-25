@@ -17,7 +17,7 @@ export default class Header extends Component {
 			},{
 				name: '木犀团队',
 				style: 'header-center',
-				route: '/'
+				route:'/'
 			},{
 				name: '成员介绍',
 				style: 'header-primary',
@@ -44,7 +44,7 @@ export default class Header extends Component {
 			<header>
 				<div class="header-wrap">
 					{ header.map( (item ,i)=> (
-						<div class={item.style}><a className ={` header-word  ${i===2?"team-name":""}` } href={item.route}>{item.name}</a></div>
+						<div class={item.style}><a className ={` header-word  ${i===2?"team-name":""}` } href={item.route === "/"?null:item.route}>{item.name}</a></div>
 					)) }
 				</div>
 			</header>

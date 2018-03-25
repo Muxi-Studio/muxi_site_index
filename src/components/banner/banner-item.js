@@ -25,7 +25,8 @@ export default class BannerItem extends Component{
 					                <span class="products-des-txt">{this.state.type}</span>
 				                </div>
 								<div>{this.state.intro}</div>
-								<button class="products-btn">下载地址</button>
+								<button class="products-btn">{props.key == 0 ?
+									"下载地址":"进入链接"}</button>
 							</div>
 						</div>
 

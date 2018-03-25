@@ -3,7 +3,7 @@
     {
       "name" : "home",
       "endpoint": "/",
-      "template": "second",
+      "template": "home",
       "async": false
     },{
       "name" : "home",

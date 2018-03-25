@@ -103,6 +103,12 @@ const info  = [
                 intro:"正在渲染中..."
             },
             {
+                position:"组员",
+                name:"王皖莹",
+                photo:"http://ourrzxc82.bkt.clouddn.com//frontend:wangwanying.jpg",
+                intro:"「好耶，是千千」"
+            },
+            {
               position: "组员",
               name: "管云凤",
               photo: "http://ourrzxc82.bkt.clouddn.com//frontend/guanyunfeng.jpg",

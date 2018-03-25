@@ -39,6 +39,9 @@ export default class BannerController extends Component{
 	switchRight = () => {
 		this.props.update(1)
 	};
+	chooseProduct = (i)=>{
+		this.props.choose(i);
+	}
 	render(props,{items}) {
 		// let url = props.icon;
 		// const iconUrl = require(`${url}`);
@@ -61,7 +64,7 @@ export default class BannerController extends Component{
 							width: 184 * props.count + 'px',
 							left: 368 - props.current * 184 + 'px'}}>
 							{ items.map( (item, i) => (
-							<div className={`${props.current === i ? class1:class2}`}>{item}</div>
+							<div className={`${props.current === i ? class1:class2}`} onClick={this.chooseProduct.bind(this,i)} >{item}</div>
 						)) }
 						</div>
 						

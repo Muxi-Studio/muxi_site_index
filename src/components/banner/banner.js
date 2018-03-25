@@ -25,6 +25,12 @@ export default class Banner extends Component {
 			})
 		}
 	};
+	chooseBanner = (index) =>{
+		this.setState({
+			currentPage : index,
+			icon : config[this.state.currentPage].icon
+		})
+	}
 	render({ }, { }) {
 		let width = this.state.countPage * 100 + '%'
 		var indexArray = Array.from(new Array(this.state.countPage),(val,index)=>index)	
@@ -38,7 +44,7 @@ export default class Banner extends Component {
 						<BannerItem key={item} count={this.state.countPage}/>
 					)) }
 				</div>
-				<BannerController update={this.updateItem} current = {this.state.currentPage} count ={this.state.countPage} icon = {this.state.icon}/>
+				<BannerController update={this.updateItem} current = {this.state.currentPage} count ={this.state.countPage} icon = {this.state.icon}  choose = {this.chooseBanner}/>
 			</div>
 		);
 	}

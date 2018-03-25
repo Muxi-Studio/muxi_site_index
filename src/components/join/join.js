@@ -24,12 +24,12 @@ export default class Join extends Component{
                     <p>
                     <strong> 校外:</strong>
                     <br />
-                    17年暑假，上海科技大学Hackinit,共100多支<br />参赛队伍，木犀第9；<br />
-                    17年下半年，华中科技大学Dorahack，共20多支<br />参赛队伍，木犀第3；<br />
+                    17年暑假，上海科技大学Hackinit,共100多支<br />参赛队伍，木犀第九；<br />
+                    17年下半年，华中科技大学Dorahack，共20多支<br />参赛队伍，木犀第三；<br />
                     <br />
                     <strong>校内：</strong>
                     <br />
-                    华师匣子最高安装量破万
+                    华师匣子最高安装量破万（其中Android用户8000+，iOS用户2000+）
                     <br />
                     <br />
                     <strong>
