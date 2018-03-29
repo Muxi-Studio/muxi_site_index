@@ -75,7 +75,7 @@ html{
     right: 0;
     // top: 10/700*100vh;
     margin-top: 66/700*100vh;
-    background-image: url('../../../static/image/foot.png');
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/member-tab-background-pic.png');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -88,51 +88,20 @@ html{
 .controller-containner{
     //   margin-left:85/1280*100vw;
 }
+ul{
+    height:89/700*100vh;
+   
+    padding:0;
+}
 li{
  list-style:none;
- //margin-left: auto;
  text-align: center;
- //width: 18.5%;
-//  margin-top: 3%;
-// display: inline;
+ width: 20%;
 line-height:70/700*100vh; 
 }
 
-@media screen and (max-width:1024px) {
-    li{
-        width: 17.8%;
-    }
-}
-@media screen and (min-width:1025px) and (max-width:1280px) {
-    li{
-        width: 18%;
-    }
-}
-@media screen and (min-width:1281px) and (max-width:1440px) {
-    li{
-        width: 18.2%;
-    }
-}
-@media screen and (min-width:1441px) and (max-width:1920px) {
-    li{
-        width: 18.5%;
-    }
-}
-@media screen and (min-width:1921px) and (max-width:2560px) {
-    li{
-        width: 18.7%;
-    }
-}
-@media screen and (min-width:2561px) and (max-width:3328px) {
-    li{
-        width: 19%;
-    }
-}
-@media screen and (min-width:3329px) {
-    li{
-        width: 19.2%;
-    }
-}
+
+
 .intro-tags{
 
  display: flex;

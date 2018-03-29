@@ -1,9 +1,9 @@
 {
   "routes": [
     {
-      "name" : "home",
+      "name" : "first",
       "endpoint": "/",
-      "template": "home",
+      "template": "first",
       "async": false
     },{
       "name" : "home",
