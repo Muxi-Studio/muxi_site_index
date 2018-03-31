@@ -112,7 +112,7 @@ const info  = [
               position: "组员",
               name: "管云凤",
               photo: "http://ourrzxc82.bkt.clouddn.com//frontend/guanyunfeng.jpg",
-              intro: "生命不息，奋斗不止！"
+              intro: "一个人的时代"
             },
             {
               position: "组员",

@@ -23,7 +23,7 @@ const conf = [{
 {
 	product:"想法池",
 	type:"Web应用",
-	intro:"曾经，有人觉得大学课程多，上课地点多，于是我们有了华师匣子：现在，有你觉得.....于是我们将有......；填下你的想法，我们帮你实现（注：暂时面向华师全体师生哦)。已有223人在此提出想法",
+	intro:"在这里，你们负责天马行空，我们负责脚踏实地，填下你的想法，我们帮你实现。已有233人在此提出想法，你呢？",
 	href:"http://cn.mikecrm.com/eZ3MyWA",
 	img:'https://occc3ev3l.qnssl.com/index_site/product-thinking-copy.png',
 	icon:"https://occc3ev3l.qnssl.com/index_site/icon_thinking.png",

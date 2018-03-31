@@ -1,10 +1,141 @@
+
+.first-button{
+    position: relative;
+    top: 50vh;
+    z-index: 999;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  $openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+  
+  
+ 
+  
+  $cyan: rgb(241,202,15);
+  $dark: #152025;
+  $borderW: 6px;
+  
+  .blob-btn {
+   
+    $numOfBlobs: 4;
+    z-index: 1;
+    position: relative;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: color 0.5s;
+    cursor: pointer;
+    
+    &:before {
+      content: "";
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border: $borderW solid $cyan;
+      border-radius: 72px;
+    }
+    
+    &:after {
+        border-radius: 72px;
+      content: "";
+      z-index: -2;
+      position: absolute;
+      left: $borderW*1.5;
+      top: $borderW*1.5;
+      width: 100%;
+      height: 100%;
+      border: $borderW solid $dark;
+      transition: all 0.3s 0.2s;
+    }
+    
+    &:hover {
+      color: $dark;
+      
+      &:after {
+        transition: all 0.3s;
+        left: 0;
+        top: 0;
+      }
+    }
+    
+    &__inner {
+      z-index: -1;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 72px;
+    }
+    
+    // additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
+    &__blobs {
+      position: relative;
+      display: block;
+      height: 100%;
+      filter: url('#goo');
+    }
+    
+    &__blob {
+      position: absolute;
+      top: $borderW;
+      width: 100% / $numOfBlobs;
+      height: 100%;
+      background: $cyan;
+      border-radius: 100%;
+      transform: translate3d(0,150%,0) scale(1.7);
+      transition: transform 0.45s;
+      
+      @supports(filter: url('#goo')) {
+        transform: translate3d(0,150%,0) scale(1.4);
+      }
+      
+      @for $i from 1 through $numOfBlobs {
+        &:nth-child(#{$i}) {
+          left: ($i - 1) * (120% / $numOfBlobs);
+          transition-delay: ($i - 1) * 0.08s;
+        }
+      }
+      
+      .blob-btn:hover & {
+        transform: translateZ(0) scale(1.7);
+        
+        @supports(filter: url('#goo')) {
+          transform: translateZ(0) scale(1.4);
+        }
+      }
+    }
+    
+  }
+
+
+  
+
+
 .first{
+    // margin: 0 auto;
+    text-align: center;
     width: 100%;
-    height:100vh;
-    background-image: url('../../../static/image/first-web.png');
-    background-size:cover;
+    height:700px;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web.png');
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:top;
+
 }
 .first-cloud-cantainner{
     opacity: 1;
@@ -20,12 +151,13 @@
     
     @keyframes leftcloud
     {
-         100% {transform: translateX(30%)}
+         100% {transform: translateX(336/1280*100vw)}
     } 
     animation: leftcloud 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; 
-    width: 50%;
-    height: 424px;
-    background-image: url('../../../static/image/first-web-left-clound.png');
+    width: 336/1280*100vw;
+    height: 424/700*100vh;
+    margin-left: -336/1280*100vw;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-left-clound.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,17 +165,133 @@
 .first-right-cloud{
     @keyframes rightcloud
     {
-        100% {transform: translateX(-30%)}
+        100% {transform: translateX(-50/1280*100vw)}
     }
-    margin-left: 50%;
+    float: right;
+    margin-left: 80vw;
     animation: rightcloud 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; 
-    width: 50%;
-    height: 332px;
-    background-image: url('../../../static/image/first-web-right-clound.png');
+    width: 259/1280*100vw;
+    height: 332/700*100vh;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-right-clound.png');
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.first-center-words{
+    width: 100%;
+    height: 157px;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-center-words.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+.first-center-trees-containner{
+    overflow: hidden;
+
+    text-align: center;
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    
+}
+.first-center-gray-trees{
+    @keyframes grayappear
+    {   
+        50%{opacity: 1;}
+        75%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+    opacity: 0;
+    animation: grayappear 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s forwards; 
+    height:700px;
+    width: 100%;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-gray-trees.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.first-center-green-trees{
+    @keyframes greenup
+    {   
+       100%{transform: translateY(-10vh)}
+    }
+    animation:greenup 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s forwards;
+    margin-bottom: -10vh;
+    width: 100%;
+    height:310px ;
+    position: absolute;
+    bottom: 0vh;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-green-trees.png');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
+.first-bottom-prond{
+    
+    width: 100%;
+    height:320px ;
+    position: absolute;
+    bottom: 0;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-buttom-pond.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.first-top-stars{
+    @keyframes stardown
+    {   
+       100%{transform: translateY(1vh);
+            opacity: 1}
+    }
+    z-index: 0;
+    opacity: 0;
+    animation:stardown 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s forwards;
+    width: 1040/1280*100vw;
+    height:160px ;
+    position: absolute;
+    top: 0;
+    left: 230/1280*100vw;
+    
 
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-top-stars.png');
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.first-border{
+    z-index: 99;
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-border.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.first-top-cloud{
+   
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    top:0vh;
+    background-image: url('https://occc3ev3l.qnssl.com/index_site/first-web-top-cloud.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+.first-others{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
