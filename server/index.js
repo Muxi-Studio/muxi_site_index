@@ -13,7 +13,7 @@ app.use(userAgent);
 
 router.get("/", function(ctx, next) {
 
-  let template = swig.compileFile(path.resolve(templateRoot, "second.html"));
+  let template = swig.compileFile(path.resolve(templateRoot, "first.html"));
   ctx.body = template({});
 });
 
