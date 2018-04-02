@@ -1,23 +1,22 @@
 @import "../banner/banner.scss";
+@import "../../styles/base.scss";
 $group-count: 5;
 $group-angle: 360deg / $group-count;
 $group-adapt: 360deg / $group-count / 4;
 
-.products-intro{
-	width: 100%;
-	height: 100%;
-	position: relative;
+.products-intro {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.group-controller{
-	position: absolute;
-	left:50%; 
-  top:50%;
+.group-controller {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   border-radius: 50%;
-  transform:translate(-50%,-50%); 
-  -webkit-transform:translate(-50%,-50%);
+  @include transfxy(-50%, -50%);
 }
-
 
 /* Respect Wheel */
 .circle-menu li {
@@ -26,45 +25,44 @@ $group-adapt: 360deg / $group-count / 4;
 }
 
 .circle-menu {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border: solid 1px rgb(250,174,28);
-    border-radius: 50%;
-    transform: rotate(- $group-adapt * 2)
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: solid 1px rgb(250, 174, 28);
+  border-radius: 50%;
+  transform: rotate(-$group-adapt * 2);
 }
 
-.circle-menu-round{
-  
-	position: relative;
-	width:60px;
-	height: 60px;
-	top:0;
-	left:0;
-	transform:rotate(72deg * 5 + $group-adapt);
-	.circle-menu-dot{
-		position: absolute;
-		width:100%;
+.circle-menu-round {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  transform: rotate(72deg * 5 + $group-adapt);
+  .circle-menu-dot {
+    position: absolute;
+    width: 100%;
     height: 100%;
     background-image: url("../../../static/image/logo.png");
     background-repeat: no-repeat;
     background-position: 50%;
-		top:50%;
-		left: 50%;
-		transform:translate(-50%,-50%) translate(30px);
-	}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(30px);
+  }
 }
-.group-name{
+.group-name {
   cursor: pointer;
 }
 .circle-menu a {
   display: block;
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
-  width: 40px; 
+  width: 40px;
   height: 40px;
-  line-height:40px;
+  line-height: 40px;
   margin: -20px;
   text-align: center;
   text-decoration: none;
@@ -73,8 +71,12 @@ $group-adapt: 360deg / $group-count / 4;
   opacity: 0.5;
 }
 
-@for $i from 0 through $group-count - 1 { 
-    .circle-menu-#{$i} { transform: rotate($group-angle * $i + $group-adapt) translate(60px) rotate(- $group-angle * $i + $group-adapt); }
+@for $i from 0 through $group-count - 1 {
+  .circle-menu-#{$i} {
+    transform: rotate($group-angle * $i + $group-adapt)
+      translate(60px)
+      rotate(-$group-angle * $i + $group-adapt);
+  }
 }
 
 .example-enter {
@@ -94,11 +96,7 @@ $group-adapt: 360deg / $group-count / 4;
   opacity: 0.01;
   transition: opacity 300ms ease-in;
 }
-.onGroup{
-   font-weight: bold;
-  opacity: 1!important;
-
-  //color:rgb(250,174,28)!important ; 
-  // text-shadow:1px 1px 6px rgb(250,174,28);
+.onGroup {
+  font-weight: bold;
+  opacity: 1 !important;
 }
-

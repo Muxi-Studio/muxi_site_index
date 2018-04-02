@@ -1,11 +1,40 @@
-@import './color.scss';
+@import "./color.scss";
 
-html,body{
-	width: 100%;
-	height: 100%;
-	margin:0;
-	padding: 0;
-	background-color: $bg-color;
-	color:$txt-color;
-	font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $txt-color;
+  font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "Hiragino Sans GB",
+    "WenQuanYi Micro Hei", sans-serif;
+}
+@mixin anim($function, $staytime, $way, $time, $result) {
+  animation: $function $staytime $way $time $result;
+  -webkit-animation: $function $staytime $way $time $result;
+  -o-animation: $function $staytime $way $time $result;
+  -moz-animation: $function $staytime $way $time $result;
+}
+@mixin transfxy($x, $y) {
+  -moz-transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+@mixin transfz($z) {
+  -moz-transform: translateZ($z);
+  -webkit-transform: translateZ($z);
+  -o-transform: translateZ($z);
+  -ms-transform: translateZ($z);
+  transform: translateZ($z);
+}
+@mixin transingle($option) {
+  -moz-transform: $option;
+  -webkit-transform: $option;
+  -o-transform: $option;
+  -ms-transform: $option;
+  transform: $option;
 }

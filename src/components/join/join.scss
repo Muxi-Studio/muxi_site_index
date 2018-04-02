@@ -1,44 +1,30 @@
-
 @import "../../styles/base.scss";
-html{
-    
-    overflow-x: hidden; 
-    overflow-y: auto;
-    }
-    .join-web{
-        text-align: center;
-    }
- .join-word{
-    line-height: 34/700*100vh;
-    font-size: 18/1280*100vw;
-    position: absolute;
-    top: 155/700*100vh;
-    left: 122/1280*100vw;
- }
-// .background-img{
-//     width: 100vw;
-//     height: 100%;
-//     position: absolute;
-//     left: 198/1280*100vw;
-//     top: 84/700*100vh;
-// }
-.background-star{
-   
-    
-    width: 799/1280*100vw;
-    height: 480/700*100vh;
-
-
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-.background-button{
-    position: absolute;
-    left: 548/1280*100vw;
-    top: 570/700*100vh;
+.join-web {
+  text-align: center;
 }
-.background-button-inner{
-    width: 176/1280*100vw;
-    height: 69/700*100vh;
-    cursor: pointer;
+.join-word {
+  line-height: 34/700 * 100vh;
+  font-size: 18/1280 * 100vw;
+  position: absolute;
+  top: 155/700 * 100vh;
+  left: 122/1280 * 100vw;
 }
 
-
+.background-star {
+  width: 799/1280 * 100vw;
+  height: 480/700 * 100vh;
+}
+.background-button {
+  position: absolute;
+  left: 548/1280 * 100vw;
+  top: 570/700 * 100vh;
+}
+.background-button-inner {
+  width: 176/1280 * 100vw;
+  height: 69/700 * 100vh;
+  cursor: pointer;
+}
