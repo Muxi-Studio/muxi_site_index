@@ -4,15 +4,16 @@ const Router = require("koa-router");
 const userAgent = require("koa-useragent");
 const path = require("path");
 const swig = require("swig");
+const compression = require("compression");
 const router = new Router();
 const app = new Koa();
 
 const templateRoot = path.join(__dirname, "../dist/templates");
 
 app.use(userAgent);
+app.use(compression);
 
 router.get("/", function(ctx, next) {
-
   let template = swig.compileFile(path.resolve(templateRoot, "first.html"));
   ctx.body = template({});
 });
@@ -36,8 +37,6 @@ router.get("/join", function(ctx, next) {
   let template = swig.compileFile(path.resolve(templateRoot, "join.html"));
   ctx.body = template({});
 });
-
-
 
 router.get(/^\/static(?:\/|$)/, async ctx => {
   let filepath = ctx.path.replace(/static\//, "");

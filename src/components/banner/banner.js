@@ -1,5 +1,4 @@
 import { h, render, Component } from "preact";
-// import PreactCSSTransitionGroup from 'preact-css-transition-group'
 import BannerItem from "./banner-item.js";
 import BannerController from "./banner-controller.js";
 import style from "./banner.scss";
@@ -11,7 +10,6 @@ export default class Banner extends Component {
     super();
     this.state.countPage = config.length;
   }
-  //	console.log(config[this.state.currentPage]);
   state = {
     currentPage: 0,
     icon: config[0].icon
