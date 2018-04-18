@@ -57,6 +57,10 @@ $borderW: 6px;
     height: 100%;
     border: $borderW solid $dark;
     transition: all 0.3s 0.2s;
+    -moz-transition: all 0.3s 0.2s;
+    -webkit-transition: all 0.3s 0.2s;
+    -o-transition: all 0.3s 0.2s;
+    -ms-transition: all 0.3 0.2s;
   }
 
   &:hover {
@@ -64,6 +68,10 @@ $borderW: 6px;
 
     &:after {
       transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      -ms-transition: all 0.3s;
       left: 0;
       top: 0;
     }
@@ -95,8 +103,15 @@ $borderW: 6px;
     height: 100%;
     background: $cyan;
     border-radius: 100%;
+    -moz-transform: translate3d(0, 150%, 0) scale(1.7);
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+    -ms-transform: translate3d(0, 150%, 0) scale(1.7);
     transform: translate3d(0, 150%, 0) scale(1.7);
     transition: transform 0.45s;
+    -moz-transition: transform 0.45s;
+    -webkit-transition: transform 0.45s;
+    -o-transition: transform 0.45s;
+    -ms-transition: transform 0.45s;
 
     @supports (filter: url("#goo")) {
       transform: translate3d(0, 150%, 0) scale(1.4);
@@ -110,9 +125,17 @@ $borderW: 6px;
     }
 
     .blob-btn:hover & {
+      -moz-transform: translateZ(0) scale(1.7);
+      -webkit-transform: translateZ(0) scale(1.7);
+      -o-transform: translateZ(0) scale(1.7);
+      -ms-transform: translateZ(0) scale(1.7);
       transform: translateZ(0) scale(1.7);
 
       @supports (filter: url("#goo")) {
+        -moz-transform: translateZ(0) scale(1.4);
+        -webkit-transform: translateZ(0) scale(1.4);
+        -o-transform: translateZ(0) scale(1.4);
+        -ms-transform: translateZ(0) scale(1.4);
         transform: translateZ(0) scale(1.4);
       }
     }
@@ -144,6 +167,7 @@ $borderW: 6px;
       transform: translateX(336/1280 * 100vw);
     }
   }
+
   @include anim(
     leftcloud,
     1s,

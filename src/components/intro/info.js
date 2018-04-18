@@ -157,8 +157,8 @@ const info = [
       {
         position: "隔壁老王",
         name: "王佳妮",
-        intro: "http://ourrzxc82.bkt.clouddn.com//design/wangjiani.png",
-        photo: "社障，甜党，INFJ，颜狗，混乱邪恶，只会画画"
+        intro: "社障，甜党，INFJ，颜狗，混乱邪恶，只会画画",
+        photo: "http://ourrzxc82.bkt.clouddn.com//design/wangjiani.png"
       },
       {
         position: "老人",
