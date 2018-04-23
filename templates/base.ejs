@@ -13,9 +13,13 @@
     <% } %> -->
     {% block title %}{% endblock %}    
 </head>
-
+ 
 <body>
-    {% block body %}{% endblock %}    
+
+	
+    {% block body %}
+    
+    {% endblock %}    
     <% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
         <script src="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>"></script>
     <% } %>

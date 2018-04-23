@@ -167,6 +167,16 @@ $borderW: 6px;
       transform: translateX(336/1280 * 100vw);
     }
   }
+  @-moz-keyframes leftcloud {
+    100% {
+      -moz-transform: translateX(336/1280 * 100vw);
+    }
+  }
+  @-webkit-keyframes leftcloud {
+    100% {
+      -webkit-transform: translateX(336/1280 * 100vw);
+    }
+  }
 
   @include anim(
     leftcloud,
@@ -187,6 +197,16 @@ $borderW: 6px;
   @keyframes rightcloud {
     100% {
       transform: translateX(-50/1280 * 100vw);
+    }
+  }
+  @-moz-keyframes rightcloud {
+    100% {
+      -moz-transform: translateX(-50/1280 * 100vw);
+    }
+  }
+  @-webkit-keyframes rightcloud {
+    100% {
+      -webkit-transform: translateX(-50/1280 * 100vw);
     }
   }
   float: right;
@@ -215,11 +235,10 @@ $borderW: 6px;
   z-index: 9;
   position: absolute;
   top: 30%;
-  transform: translateY(-50%);
+  @include transingle(translateY(-50%)) / / transform: translateY(-50%) ;;
 }
 .first-center-trees-containner {
   overflow: hidden;
-
   text-align: center;
   width: 100%;
   height: 100vh;
@@ -227,6 +246,28 @@ $borderW: 6px;
 }
 .first-center-gray-trees {
   @keyframes grayappear {
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes grayappear {
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes grayappear {
     50% {
       opacity: 1;
     }
@@ -256,6 +297,16 @@ $borderW: 6px;
   @keyframes greenup {
     100% {
       transform: translateY(-10vh);
+    }
+  }
+  @-moz-keyframes greenup {
+    100% {
+      -moz-transform: translateY(-10vh);
+    }
+  }
+  @-webkit-keyframes greenup {
+    100% {
+      -webkit-transform: translateY(-10vh);
     }
   }
   @include anim(
@@ -288,6 +339,18 @@ $borderW: 6px;
 }
 .first-top-stars {
   @keyframes stardown {
+    100% {
+      transform: translateY(1vh);
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes stardown {
+    100% {
+      transform: translateY(1vh);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes stardown {
     100% {
       transform: translateY(1vh);
       opacity: 1;

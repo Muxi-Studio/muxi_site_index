@@ -11,13 +11,19 @@
 <!--      -->
     {% block title %}{% endblock %}    
 </head>
-
+ 
 <body>
-    {% block body %}{% endblock %}    
+
+	
+    {% block body %}
+    
+    {% endblock %}    
     
         <script src="/dist/manifest.js"></script>
     
         <script src="/dist/vendor.js"></script>
+    
+        <script src="/dist/common.js"></script>
     
     {% block script %}{% endblock %}
 </body>

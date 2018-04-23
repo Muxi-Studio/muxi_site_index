@@ -1,144 +1,7 @@
-// @import "../../styles/base.scss";
-// html {
-//   overflow-x: hidden;
-//   overflow-y: auto;
-// }
-// .intro-card {
-//   max-width: 140/1280 * 100vw;
-//   min-width: 140px;
-//   min-height: 202/700 * 100vh;
-//   background-color: rgb(55, 75, 84);
-//   border-radius: 15%;
-//   font-weight: 550;
-// }
-// .intro-photo {
-//   width: 78px;
-//   height: 78px;
-//   border-radius: 50%;
-//   position: relative;
-//   top: 25px;
-//   left: 50%;
-//   @include transingle(translateX(-50%));
-//   background-size: contain;
-// }
-// .intro-position {
-//   font-size: smaller;
-//   display: inline-block;
-//   position: relative;
-//   top: 10px;
-//   left: 30px;
-//   min-width: 45px;
-//   height: 20px;
-//   background-color: rgb(253, 172, 31);
-//   color: white;
-//   border-radius: 135px;
-//   text-align: center;
-// }
-// .intro-name {
-//   margin-left: 20%;
-//   margin-top: 25px;
-// }
-// .intro-tag {
-//   margin-left: 20%;
-// }
-
-// .intro-card-containner {
-//   padding-left: 120/1280 * 100vw;
-//   padding-right: 120/1280 * 100vw;
-//   max-height: 540px;
-//   overflow-y: scroll;
-//   overflow-x: hidden;
-//   display: flex;
-//   width: 100%;
-//   flex-wrap: wrap;
-// }
-
-// .intro-card-father {
-//   flex-wrap: wrap;
-//   margin-top: 40/700 * 100vh;
-//   min-width: 140/1280 * 100vw;
-//   margin-right: 100px;
-// }
-// .intro-controller {
-//   position: fixed;
-//   bottom: 10/700 * 100vh;
-//   right: 0;
-//   margin-top: 66/700 * 100vh;
-//   background-image: url("https://occc3ev3l.qnssl.com/index_site/member-tab-background-pic.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   height: 89/700 * 100vh;
-//   width: 100%;
-// }
-
-// ul {
-//   height: 89/700 * 100vh;
-//   padding: 0;
-// }
-// li {
-//   list-style: none;
-//   text-align: center;
-//   width: 20%;
-//   line-height: 70/700 * 100vh;
-// }
-
-// .intro-tags {
-//   display: flex;
-//   width: 100%;
-// }
-
-// .intro-card {
-//   @include transingle(rotateY(0deg));
-
-//   transition: all 0.5s ease-in-out 0s;
-//   -moz-transition: all 0.5s ease-in-out 0s;
-//   -webkit-transition: all 0.5s ease-in-out 0s;
-//   -o-transition: all 0.5s ease-in-out 0s;
-// }
-
-// .intro-content {
-//   border-radius: 15%;
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   text-align: center;
-//   background: rgba(0, 0, 0, 0.7);
-//   @include transingle(rotateY(90deg));
-//   transition: all 0.5s ease-in-out 0s;
-//   font-size: 13px;
-// }
-// .intro-words-container {
-//   padding: 7% 5%;
-// }
-// .intro-card-father:hover .intro-content {
-//   @include transingle(rotateY(0deg));
-// }
-// li > a {
-//   font-size: 20px;
-//   cursor: pointer;
-// }
-// li > .onTag {
-//   font-weight: 600;
-//   font-size: 25px;
-//   color: rgb(250, 174, 28);
-//   text-shadow: 2px 2px 6px rgb(250, 174, 28), -1px -1px #fff, 1px -1px #444;
-// }
-// .intro-words {
-//   width: 41.7%;
-//   height: 23.4%;
-//   background-color: rgb(253, 172, 31);
-//   color: white;
-//   border-radius: 135px;
-//   margin: 8% auto;
-//   font-size: 16px;
-// }
 @import "../../styles/base.scss";
 html {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 img {
   padding: 0;
@@ -188,6 +51,7 @@ img {
   padding-left: 120/1280 * 100vw;
   padding-right: 120/1280 * 100vw;
   max-height: 540px;
+  //max-height: 700px;
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
@@ -202,7 +66,7 @@ img {
   margin-right: 100px;
 }
 .intro-controller {
-  position: fixed;
+  position: absolute;
   bottom: 10/700 * 100vh;
   right: 0;
   margin-top: 66/700 * 100vh;
