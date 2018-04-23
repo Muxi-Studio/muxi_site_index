@@ -235,7 +235,7 @@ $borderW: 6px;
   z-index: 9;
   position: absolute;
   top: 30%;
-  @include transingle(translateY(-50%)) / / transform: translateY(-50%) ;;
+  @include transingle(translateY(-50%));
 }
 .first-center-trees-containner {
   overflow: hidden;
