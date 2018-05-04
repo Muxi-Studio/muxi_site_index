@@ -156,7 +156,7 @@ $borderW: 6px;
   opacity: 1;
   position: absolute;
   top: 167/700 * 100vh;
-  width: 100%;
+  width: 100vw;
   height: 424px;
   display: flex;
 }
@@ -188,12 +188,14 @@ $borderW: 6px;
   width: 336/1280 * 100vw;
   height: 424/700 * 100vh;
   margin-left: -336/1280 * 100vw;
-  background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-left-clound.png");
+  background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-left-clound-new.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 .first-right-cloud {
+  position: relative;
+  left: 82vw;
   @keyframes rightcloud {
     100% {
       transform: translateX(-50/1280 * 100vw);
@@ -209,8 +211,6 @@ $borderW: 6px;
       -webkit-transform: translateX(-50/1280 * 100vw);
     }
   }
-  float: right;
-  margin-left: 80vw;
   @include anim(
     rightcloud,
     1s,
@@ -220,7 +220,7 @@ $borderW: 6px;
   );
   width: 259/1280 * 100vw;
   height: 332/700 * 100vh;
-  background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-right-clound.png");
+  background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-right-clound-new.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -321,7 +321,7 @@ $borderW: 6px;
   height: 310px;
   position: absolute;
   bottom: 0vh;
-  background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-green-trees.png");
+  background-image: url("https://occc3ev3l.qnssl.com/index_site/first-web-green-trees-new.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

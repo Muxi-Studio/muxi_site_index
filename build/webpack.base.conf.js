@@ -128,13 +128,7 @@ module.exports = {
       template: path.join(__dirname, "../templates/first.ejs"),
       chunks: ["first"]
     }),
-    new HtmlWebpackPlugin({
-      alwaysWriteToDisk: true,
-      filename: "templates/header.html",
-      inject: false,
-      template: path.join(__dirname, "../templates/header.ejs"),
-      chunks: ["common"]
-    }),
+
     new HtmlWebpackHarddiskPlugin()
   ]
 };
