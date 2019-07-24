@@ -21,7 +21,7 @@ export default class Join extends Component {
         <div ondragstart="return false" className="join-web">
           <div className="background-img">
             <img
-              src="https://occc3ev3l.qnssl.com/index_site/join2.png"
+              src="https://static.muxixyz.com/index_site/join2.png"
               className="background-star"
               ref={img => {
                 this.img = img;
@@ -31,7 +31,7 @@ export default class Join extends Component {
 
           <div className="background-button">
             <img
-              src="https://occc3ev3l.qnssl.com/index_site/join_button.png"
+              src="https://static.muxixyz.com/index_site/join_button.png"
               className="background-button-inner"
               onClick={this.handleJoin.bind(this)}
             />
