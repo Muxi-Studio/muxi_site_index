@@ -21,10 +21,16 @@ img {
   height: 78px;
   border-radius: 50%;
   position: relative;
+  overflow: hidden;
   top: 25px;
   left: 50%;
   @include transingle(translateX(-50%));
   background-size: contain;
+  background-color: #fff;
+  img {
+    width: auto;
+    height: 100%;
+  }
 }
 .intro-position {
   font-size: smaller;

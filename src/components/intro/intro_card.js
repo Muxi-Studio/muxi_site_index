@@ -7,8 +7,7 @@ export default class Card extends Component {
   }
 
   handleImageError() {
-    this.img.src =
-      "https://wx4.sinaimg.cn/mw690/006P0MECly1fouzomp40lj31hc0u011e.jpg";
+    this.img.src = "https://static.muxixyz.com/workbench/avatar/14.png";
   }
 
   render(props, { photo }) {
@@ -23,14 +22,16 @@ export default class Card extends Component {
       <div className="intro-card-father">
         <div className="intro-card">
           {/* <div className = "intro-photo" style = {{backgroundImage:`url(${props.info.photo})`}}></div>  */}
-          <img
-            className="intro-photo"
-            src={props.info.photo}
-            ref={img => {
-              this.img = img;
-            }}
-            onError={this.handleImageError.bind(this)}
-          />
+          <div className="intro-photo">
+            <img
+              src={props.info.photo}
+              ref={img => {
+                this.img = img;
+              }}
+              onError={this.handleImageError.bind(this)}
+            />
+          </div>
+
           <div className="intro-position" style={{ background: positionColor }}>
             {props.info.position}
           </div>

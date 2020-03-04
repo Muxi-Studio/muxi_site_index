@@ -11,6 +11,9 @@ class App extends Component {
       <app>
         <Header />
         <Intro />
+        <div className="beian intro">
+          <a href="http://www.beian.miit.gov.cn/">鄂ICP备19024133号</a>
+        </div>
       </app>
     );
   }

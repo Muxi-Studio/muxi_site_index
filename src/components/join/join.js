@@ -12,7 +12,7 @@ export default class Join extends Component {
     };
   }
   handleJoin() {
-    window.location = "http://cn.mikecrm.com/uBXlK1v";
+    alert("请加 QQ 群 763615354 咨询");
   }
   render({}, {}) {
     return (

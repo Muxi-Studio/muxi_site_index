@@ -10,6 +10,9 @@ class App extends Component {
       <app>
         <Header />
         <Join />
+        <div className="beian join">
+          <a href="http://www.beian.miit.gov.cn/">鄂ICP备19024133号</a>
+        </div>
       </app>
     );
   }

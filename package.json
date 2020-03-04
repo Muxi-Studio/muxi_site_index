@@ -5,7 +5,7 @@
   "main": "ninja.conf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " node node_modules/ninja_cli2/src/bin/ninja start",
+    "start": " node ../ninja/src/bin/ninja start",
     "build": " node ./build/build.js",
     "precommit": "pretty-quick --staged"
   },
@@ -46,10 +46,10 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.3.0",
-    "webpack-dev-middleware": "^1.12.0",
-    "webpack-dev-server": "^2.7.1",
-    "webpack-hot-middleware": "^2.18.2",
-    "webpack-merge": "^4.1.0"
+    "webpack": "3.3.0",
+    "webpack-dev-middleware": "1.12.0",
+    "webpack-dev-server": "2.7.1",
+    "webpack-hot-middleware": "2.18.2",
+    "webpack-merge": "4.1.0"
   }
 }
