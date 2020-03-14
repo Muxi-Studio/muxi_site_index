@@ -15,7 +15,7 @@ const info = [
         intro: "介绍加载失败..."
       },
       {
-        position: "组长 主管",
+        position: "三代目 组长 主管",
         name: "张可",
         photo: "https://static.muxixyz.com/muxisite/avartar/zk.jpeg",
         intro: "DON'T PANIC"
@@ -40,10 +40,10 @@ const info = [
         intro: "Carpe diem."
       },
       {
-        position: "组长 主管",
+        position: "四代目 组长 主管",
         name: "宋汝阳",
         photo: "http://muxisite-avater.muxixyz.com//backend/songruyang.jpg",
-        intro: "写代码之前，一定要保证充足睡眠。[我不是女装大佬]"
+        intro: "日积代码千行，则无往而不利也@学业进行中"
       },
       {
         position: "组员",
@@ -53,15 +53,69 @@ const info = [
       },
       {
         position: "组员",
-        name: "王博学",
-        photo: "http://muxisite-avater.muxixyz.com//backend/wangboxue.jpg",
-        intro: "追逐月亮的雪孩子，在黑暗里追逐不可及的光明"
-      },
-      {
-        position: "组员",
         name: "陈冠华",
         photo: "http://muxisite-avater.muxixyz.com//backend/chengguanhua.jpg",
         intro: "还在不断学习提升中"
+      },
+      {
+        position: "五代目 组长",
+        name: "章茗超",
+        photo: "http://muxisite-avater.muxixyz.com//backend/zhangmingchao.jpg",
+        intro: "未来不足惧，过往不足泣"
+      },
+      {
+        position: "组员",
+        name: "余鸿奇",
+        photo: "http://muxisite-avater.muxixyz.com//backend/yuhongqi.jpg",
+        intro: "美丽的南方"
+      },
+      {
+        position: "组员",
+        name: "蒋志成",
+        photo: "http://muxisite-avater.muxixyz.com//backend/jiangzhicheng.jpg",
+        intro: "hello"
+      },
+      {
+        position: "组员",
+        name: "胡嘉旻",
+        photo: "http://muxisite-avater.muxixyz.com//backend/hujiamin.jpg",
+        intro: "这个人没有留下任何简介~~~"
+      },
+      {
+        position: "组员",
+        name: "张竣淇",
+        photo: "http://muxisite-avater.muxixyz.com//backend/zhangjunqi.jpg",
+        intro: "给阿姨倒一杯卡布奇诺"
+      },
+      {
+        position: "组员",
+        name: "张军洁",
+        photo: "http://muxisite-avater.muxixyz.com//backend/zhangjunjie.jpg",
+        intro: "We Choose to Go to the Moon"
+      },
+      {
+        position: "组员",
+        name: "黄凌云",
+        photo: "http://muxisite-avater.muxixyz.com//backend/huanglingyun.jpg",
+        intro: "只有个性 没有签名"
+      },
+      {
+        position: "组员",
+        name: "王雯坚",
+        photo: "http://muxisite-avater.muxixyz.com//backend/wangwenjian.jpg",
+        intro: "这个人没有留下任何简介~~~"
+      },
+      {
+        position: "组员",
+        name: "洪欣然",
+        photo: "http://muxisite-avater.muxixyz.com//backend/hongxinran.jpg",
+        intro: "开心就好啦"
+      },
+      {
+        position: "组员",
+        name: "邓永骏",
+        photo: "http://muxisite-avater.muxixyz.com//backend/dengyongjun.jpg",
+        intro: "45岁，离过婚，俩孩子"
       }
     ]
   },
@@ -93,7 +147,7 @@ const info = [
         intro: "前端组员一枚"
       },
       {
-        position: "组长",
+        position: "三代目 组长",
         name: "蔡茹芸",
         photo: "http://muxisite-avater.muxixyz.com//frontend/cairuyun.jpg",
         intro: "正在渲染中..."
@@ -117,22 +171,82 @@ const info = [
         intro: "求知若渴，求贤若愚"
       },
       {
-        position: "组员",
-        name: "季卓琦",
-        photo: "http://muxisite-avater.muxixyz.com//frontend/jizhuoqi.jpg",
-        intro: "一只梦想成为大佬的咸鱼"
-      },
-      {
-        position: "组长",
+        position: "四代目 组长",
         name: "包欣雨",
         photo: "http://muxisite-avater.muxixyz.com//frontend/baoxinyu.jpg",
         intro: "When your dreams come alive, you are unstoppable"
       },
       {
         position: "组员",
+        name: "季卓琦",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/jizhuoqi.jpg",
+        intro: "一只梦想成为大佬的咸鱼"
+      },
+      {
+        position: "组员",
         name: "王玉飞",
         photo: "http://muxisite-avater.muxixyz.com//frontend/wangyufei.jpg",
         intro: "荼靡易逝，苦蛊甘饴"
+      },
+      {
+        position: "五代目 组长",
+        name: "李雪莲",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/lixuelian.jpg",
+        intro: "Good good study, day day up!"
+      },
+      {
+        position: "组员",
+        name: "丁露洁",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/dinglujie.jpg",
+        intro: "一只预备役程序狗"
+      },
+      {
+        position: "组员",
+        name: "刘蛟",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/liujiao.jpg",
+        intro: "莫得感情的小p"
+      },
+      {
+        position: "组员",
+        name: "张文锦",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/zhangwenjin.jpg",
+        intro: "好好学习，天天向上。"
+      },
+      {
+        position: "组员",
+        name: "张敏跃",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/zhangminyue.jpg",
+        intro: "积极废人"
+      },
+      {
+        position: "组员",
+        name: "黄路遥",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/huangluyao.jpg",
+        intro: "心有猛虎，细嗅蔷薇"
+      },
+      {
+        position: "组员",
+        name: "韩晨龙",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/hanchenlong.jpg",
+        intro: "win🐰"
+      },
+      {
+        position: "组员",
+        name: "廖瑜璐",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/liaoyulu.jpg",
+        intro: "讨厌睡觉."
+      },
+      {
+        position: "组员",
+        name: "刘安",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/liuan.jpg",
+        intro: "まだ　ドキドキの感じ取り戻したい"
+      },
+      {
+        position: "组员",
+        name: "沈佳瑶",
+        photo: "http://muxisite-avater.muxixyz.com//frontend/shenjiayao.png",
+        intro: "Nothing is impossible. 喜欢就去做吧。"
       }
     ]
   },
@@ -217,6 +331,78 @@ const info = [
         name: "李子琛",
         photo: "http://muxisite-avater.muxixyz.com//design/lizichen.png",
         intro: "没有技术的技术宅.."
+      },
+      {
+        position: "组员",
+        name: "龙星晔",
+        photo: "http://muxisite-avater.muxixyz.com//design/longxingye.jpg",
+        intro: "每天都要开心的小龙"
+      },
+      {
+        position: "组长",
+        name: "谭航",
+        photo: "http://muxisite-avater.muxixyz.com//design/tanhang.png",
+        intro: "呜啦啦啦火车笛，随着奔腾的马蹄~"
+      },
+      {
+        position: "组员",
+        name: "陈一鸣",
+        photo: "http://muxisite-avater.muxixyz.com//design/chenyiming.jpg",
+        intro: "设计组小白。目标是每天都开开心心的；设计让我开心。"
+      },
+      {
+        position: "组员",
+        name: "向舒依菡",
+        photo: "http://muxisite-avater.muxixyz.com//design/xiangshuyihan.jpg",
+        intro: "努力做一只不咕鸟"
+      },
+      {
+        position: "组员",
+        name: "张力丹",
+        photo: "http://muxisite-avater.muxixyz.com//design/rai.jpg",
+        intro: "努力不鸽"
+      },
+      {
+        position: "组员",
+        name: "戴纤萍",
+        photo: "http://muxisite-avater.muxixyz.com//design/daixianping.png",
+        intro: "好好向上天天学习"
+      },
+      {
+        position: "组员",
+        name: "曹舒睿",
+        photo: "http://muxisite-avater.muxixyz.com//design/caoshurui.png",
+        intro: "今天学习了吗"
+      },
+      {
+        position: "组员",
+        name: "褚予汐",
+        photo: "http://muxisite-avater.muxixyz.com//design/chuyuxi.png",
+        intro: "Be Better"
+      },
+      {
+        position: "组员",
+        name: "孟凡瑶",
+        photo: "http://muxisite-avater.muxixyz.com//design/mengfanyao.png",
+        intro: "快乐不需要等到明天，下一秒都觉得遥远～"
+      },
+      {
+        position: "组员",
+        name: "孙烨琳",
+        photo: "http://muxisite-avater.muxixyz.com//design/sunyelin.png",
+        intro: "Little  Foliage"
+      },
+      {
+        position: "组员",
+        name: "徐欢",
+        photo: "http://muxisite-avater.muxixyz.com//design/xuhuan.png",
+        intro: "想上学了"
+      },
+      {
+        position: "组员",
+        name: "周圣彬",
+        photo: "http://muxisite-avater.muxixyz.com//design/zhoushengbin.png",
+        intro: "叉出去"
       }
     ]
   },
@@ -230,7 +416,7 @@ const info = [
         intro: "好的产品应是连接人并让其产生更多可能"
       },
       {
-        position: "组长",
+        position: "二代目 组长",
         name: "杨哲盈",
         photo: "http://muxisite-avater.muxixyz.com//product/yangzheying.jpg",
         intro: "自我差别化  随心不逐流"
@@ -254,10 +440,52 @@ const info = [
         intro: "Only the paraniod survived. "
       },
       {
+        position: "三代目 组长",
+        name: "茅心雨",
+        photo: "http://muxisite-avater.muxixyz.com//product/maoxinyu.jpg",
+        intro: "Just be happy."
+      },
+      {
+        position: "四代目 主管",
+        name: "赵思捷",
+        photo: "http://muxisite-avater.muxixyz.com//product/zhaosijie.jpg",
+        intro: "不想学技术的产品不是好咸鱼。"
+      },
+      {
+        position: "组长",
+        name: "褚宇飞",
+        photo: "http://muxisite-avater.muxixyz.com//product/chuyufei.jpg",
+        intro: "喜欢打篮球的沙雕"
+      },
+      {
         position: "组员",
-        name: "贺庆玲",
-        photo: "http://muxisite-avater.muxixyz.com//product/heqingling.jpg",
-        intro: "很多失败不是因为能力有限，而是因为没有坚持到底"
+        name: "李纪欣",
+        photo: "http://muxisite-avater.muxixyz.com//product/lijixin.png",
+        intro: "去往大西北"
+      },
+      {
+        position: "组员",
+        name: "李林沛",
+        photo: "http://muxisite-avater.muxixyz.com//product/lilinpei.png",
+        intro: "我永远喜欢高等数学"
+      },
+      {
+        position: "组员",
+        name: "孟镕媛",
+        photo: "http://muxisite-avater.muxixyz.com//product/mengrongyuan.jpg",
+        intro: "骄傲且顽固的小孟"
+      },
+      {
+        position: "组员",
+        name: "孙奥",
+        photo: "http://muxisite-avater.muxixyz.com//product/sunao.jpg",
+        intro: "绞尽脑汁，原地爆炸"
+      },
+      {
+        position: "组员",
+        name: "王雨欣",
+        photo: "http://muxisite-avater.muxixyz.com//product/wangyuxin.jpg",
+        intro: "天天开心"
       }
     ]
   },
@@ -290,6 +518,18 @@ const info = [
       },
       {
         position: "组员",
+        name: "夏玮蔚",
+        photo: "http://muxisite-avater.muxixyz.com//android/xiaweiwei.jpg",
+        intro: "这个人很懒，还没有自己的简介哦～"
+      },
+      {
+        position: "组长",
+        name: "赵弟发",
+        photo: "http://muxisite-avater.muxixyz.com//android/zhaodifa.png",
+        intro: "I am a slow walker , but i never walk backwards ."
+      },
+      {
+        position: "组员",
         name: "彭敏悦",
         photo: "http://muxisite-avater.muxixyz.com//android/pengminyuejpg",
         intro: "做任何自己觉得有意义的事"
@@ -301,16 +541,40 @@ const info = [
         intro: "我是要励志成为编程界的梅西的男人"
       },
       {
-        position: "组员",
-        name: "夏玮蔚",
-        photo: "http://muxisite-avater.muxixyz.com//android/xiaweiwei.jpg",
-        intro: "这个人很懒，还没有自己的简介哦～"
+        position: "组长",
+        name: "钟伊凡",
+        photo: "http://muxisite-avater.muxixyz.com//android/zhongyifan.jpeg",
+        intro: "敲代码慢半拍的怪咖"
       },
       {
-        position: "组长",
-        name: "赵弟发",
-        photo: "http://muxisite-avater.muxixyz.com//android/zhaodifa.png",
-        intro: "I am a slow walker , but i never walk backwards ."
+        position: "组员",
+        name: "刘竞林",
+        photo: "http://muxisite-avater.muxixyz.com//android/liujinglin.jpeg",
+        intro: "这个人很懒，什么都没留下"
+      },
+      {
+        position: "组员",
+        name: "温鑫",
+        photo: "http://muxisite-avater.muxixyz.com//android/wenxin.jpeg",
+        intro: "糊涂世界明白人"
+      },
+      {
+        position: "组员",
+        name: "蔡加明",
+        photo: "http://muxisite-avater.muxixyz.com//android/caijiaming.jpeg",
+        intro: "国际知名退堂鼓鼓手"
+      },
+      {
+        position: "组员",
+        name: "成艾",
+        photo: "http://muxisite-avater.muxixyz.com//android/chengai.jpeg",
+        intro: "rp++"
+      },
+      {
+        position: "组员",
+        name: "史颖",
+        photo: "http://muxisite-avater.muxixyz.com//android/shiying.jpeg",
+        intro: "但行好事，莫问前程"
       }
     ]
   }

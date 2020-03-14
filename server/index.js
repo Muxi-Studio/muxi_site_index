@@ -12,6 +12,13 @@ const templateRoot = path.join(__dirname, "../dist/templates");
 
 app.use(userAgent);
 app.use(compression());
+app.use((ctx, next) => {
+  if (ctx.userAgent.isMobile) {
+    ctx.redirect("http://m.muxi-tech.xyz");
+  } else {
+    next();
+  }
+});
 
 router.get("/", function(ctx, next) {
   let template = swig.compileFile(path.resolve(templateRoot, "first.html"));
