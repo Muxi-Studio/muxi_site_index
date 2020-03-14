@@ -543,37 +543,37 @@ const info = [
       {
         position: "组长",
         name: "钟伊凡",
-        photo: "http://muxisite-avater.muxixyz.com//android/zhongyifan.jpeg",
+        photo: "http://muxisite-avater.muxixyz.com//android/zhongyifan.jpg",
         intro: "敲代码慢半拍的怪咖"
       },
       {
         position: "组员",
         name: "刘竞林",
-        photo: "http://muxisite-avater.muxixyz.com//android/liujinglin.jpeg",
+        photo: "http://muxisite-avater.muxixyz.com//android/liujinglin.jpg",
         intro: "这个人很懒，什么都没留下"
       },
       {
         position: "组员",
         name: "温鑫",
-        photo: "http://muxisite-avater.muxixyz.com//android/wenxin.jpeg",
+        photo: "http://muxisite-avater.muxixyz.com//android/wenxin.jpg",
         intro: "糊涂世界明白人"
       },
       {
         position: "组员",
         name: "蔡加明",
-        photo: "http://muxisite-avater.muxixyz.com//android/caijiaming.jpeg",
+        photo: "http://muxisite-avater.muxixyz.com//android/caijiaming.jpg",
         intro: "国际知名退堂鼓鼓手"
       },
       {
         position: "组员",
         name: "成艾",
-        photo: "http://muxisite-avater.muxixyz.com//android/chengai.jpeg",
+        photo: "http://muxisite-avater.muxixyz.com//android/chengai.jpg",
         intro: "rp++"
       },
       {
         position: "组员",
         name: "史颖",
-        photo: "http://muxisite-avater.muxixyz.com//android/shiying.jpeg",
+        photo: "http://muxisite-avater.muxixyz.com//android/shiying.jpg",
         intro: "但行好事，莫问前程"
       }
     ]
